@@ -1,0 +1,1560 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Android-总复习 | 白与夜</title><meta name="keywords" content="博客,笔记"><meta name="author" content="LHT"><meta name="copyright" content="LHT"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="练习网址(简答)：https:&#x2F;&#x2F;i.kaoshiyun.com.cn&#x2F;v5&#x2F;exam&#x2F;150aac练习网址(所有)：https:&#x2F;&#x2F;i.kaoshiyun.com.cn&#x2F;v5&#x2F;exam&#x2F;6a8a40 一、kotlin语法基础变量常量的定义：​    变量var 常量val，const声明全局 基本数据类型： 四型八种（整数类型、浮点数类型、字符类型、布尔类型）： Byte 1个字节 8位 Sho">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android-总复习">
+<meta property="og:url" content="https://www.baiyeblog.top/2023/061437686.html">
+<meta property="og:site_name" content="白与夜">
+<meta property="og:description" content="练习网址(简答)：https:&#x2F;&#x2F;i.kaoshiyun.com.cn&#x2F;v5&#x2F;exam&#x2F;150aac练习网址(所有)：https:&#x2F;&#x2F;i.kaoshiyun.com.cn&#x2F;v5&#x2F;exam&#x2F;6a8a40 一、kotlin语法基础变量常量的定义：​    变量var 常量val，const声明全局 基本数据类型： 四型八种（整数类型、浮点数类型、字符类型、布尔类型）： Byte 1个字节 8位 Sho">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2023-06-14T12:02:03.000Z">
+<meta property="article:modified_time" content="2023-06-28T21:19:13.765Z">
+<meta property="article:author" content="LHT">
+<meta property="article:tag" content="博客,笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/flog.jpg"><link rel="canonical" href="https://www.baiyeblog.top/2023/061437686"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":7,"position":"top","messagePrev":"距上次更新已过去","messageNext":"天，文章内容可能已过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: LHT","link":"链接: ","source":"来源: 白与夜","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Android-总复习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-29 05:19:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/_custom/twikoo.css"><link rel="stylesheet" href="/css/_custom/oneImg.css"<link rel="stylesheet" href="/css/_custom/rightMenu.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="白与夜" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-play-circle"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">白与夜</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-play-circle"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Android-总复习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-14T12:02:03.000Z" title="发表于 2023-06-14 20:02:03">2023-06-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-28T21:19:13.765Z" title="更新于 2023-06-29 05:19:13">2023-06-29</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">15.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>53分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="Android-总复习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2023/061437686.html#post-comment"><span id="twikoo-count"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>练习网址(简答)：<a target="_blank" rel="noopener" href="https://i.kaoshiyun.com.cn/v5/exam/150aac">https://i.kaoshiyun.com.cn/v5/exam/150aac</a><br>练习网址(所有)：<a target="_blank" rel="noopener" href="https://i.kaoshiyun.com.cn/v5/exam/6a8a40">https://i.kaoshiyun.com.cn/v5/exam/6a8a40</a></p>
+<h2 id="一、kotlin语法基础"><a href="#一、kotlin语法基础" class="headerlink" title="一、kotlin语法基础"></a>一、kotlin语法基础</h2><h3 id="变量常量的定义："><a href="#变量常量的定义：" class="headerlink" title="变量常量的定义："></a>变量常量的定义：</h3><p>​    变量var 常量val，const声明全局</p>
+<h3 id="基本数据类型："><a href="#基本数据类型：" class="headerlink" title="基本数据类型："></a>基本数据类型：</h3><ul>
+<li><h4 id="四型八种（整数类型、浮点数类型、字符类型、布尔类型）："><a href="#四型八种（整数类型、浮点数类型、字符类型、布尔类型）：" class="headerlink" title="四型八种（整数类型、浮点数类型、字符类型、布尔类型）："></a>四型八种（整数类型、浮点数类型、字符类型、布尔类型）：</h4><ul>
+<li>Byte 1个字节 8位</li>
+<li>Short 2个字节 16位</li>
+<li>Int 4个字节 32位</li>
+<li>Long 8个字节 64位</li>
+<li>Float 4个字节 32位</li>
+<li>Double 8个字节 64位</li>
+<li>Boolean 1个字节 8位</li>
+<li>Char 2个字节 16位</li>
+</ul>
+</li>
+</ul>
+<p>注意，以上首字母都是大写，可以理解为Java中的包装类型，但是并不是完全相等。解释如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">虽然在 Kotlin 中基本数据类型的名称首字母大写，但它们并不是包装类型。实际上，Kotlin 的基本数据类型并不需要包装器（wrapper），因为它们本身就是对象。</span><br><span class="line"></span><br><span class="line">在 Java 中，基本数据类型是以小写字母开头的，而对应的包装类型（如 Integer、Double、Boolean 等）是以大写字母开头的。这是因为 Java 中的基本数据类型是非对象类型，而需要使用包装类型来进行装箱和拆箱操作。</span><br><span class="line"></span><br><span class="line">而在 Kotlin 中，基本数据类型是对象，可以直接调用方法和属性，不需要进行装箱和拆箱的操作。因此，它们的命名风格与 Java 中的包装类型不同，但功能类似。</span><br><span class="line"></span><br><span class="line">在 Kotlin 中，你可以像操作对象一样操作基本数据类型的变量，比如调用方法、使用属性、进行比较等，而不需要显式地进行装箱或拆箱操作。这样可以使代码更简洁和易读。</span><br></pre></td></tr></table></figure>
+
+<h3 id="对象："><a href="#对象：" class="headerlink" title="对象："></a>对象：</h3><p>所有非空类的基类：any，相当于java中的object</p>
+<p>所有类的子类型：Nothing</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">注意：其实在 Kotlin 中，`Nothing` 是所有类的子类型，而不是子类。</span><br><span class="line"></span><br><span class="line">`Nothing` 类型表示不包含任何值的类型。它在函数中通常用于标记永远不会返回的表达式或函数。例如，如果函数抛出异常或者使用 `return` 关键字提前终止函数执行，那么该函数的返回类型可以标注为 `Nothing`。</span><br><span class="line"></span><br><span class="line">由于 `Nothing` 表示没有值，因此它可以被赋值给任何其他类型的变量。例如，可以将 `Nothing` 类型的值赋给 `Int`、`String` 或其他任何类型的变量。这是因为如果一个函数永远不会返回（即抛出异常或提前终止），那么可以将该函数的返回值（即 `Nothing`）赋给任何需要的类型。</span><br><span class="line"></span><br><span class="line">总之，`Nothing` 是所有类的子类型，而不是子类。这意味着 `Nothing` 类型的值可以赋给任何其他类型的变量。</span><br></pre></td></tr></table></figure>
+
+<h3 id="可空类型："><a href="#可空类型：" class="headerlink" title="可空类型："></a>可空类型：</h3><h4 id="定义方式："><a href="#定义方式：" class="headerlink" title="定义方式："></a>定义方式：</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> b: Any? =<span class="literal">null</span></span><br></pre></td></tr></table></figure>
+
+<p>如果在定义变量时，没有写问号，则该变量在赋值时，不能为空。</p>
+<p>因为有这个限制，所以扩展出安全操作符和非安全操作符</p>
+<p>在 Kotlin 中，安全操作符（Safe Operator）和非安全操作符（Unsafe Operator）是用于处理可空类型的操作符。</p>
+<p>1.安全操作符（?.）：</p>
+<ul>
+<li>安全操作符（?.）用于在访问可能为空的对象时进行安全调用。如果对象为 null，则表达式的值为 null，不会触发空指针异常。</li>
+<li>安全操作符可以与属性、方法调用和索引访问一起使用。</li>
+<li>以下是示例用法：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> length: <span class="built_in">Int</span>? = str?.length <span class="comment">// 如果 str 为 null，则 length 为 null</span></span><br><span class="line"><span class="keyword">val</span> firstChar: <span class="built_in">Char</span>? = str?.<span class="keyword">get</span>(<span class="number">0</span>) <span class="comment">// 如果 str 为 null，则 firstChar 为 null</span></span><br></pre></td></tr></table></figure>
+
+<p>2.非安全操作符（!!）：</p>
+<ul>
+<li>非安全操作符（!!）用于显式地断言一个可空类型的对象不为空，即告知编译器你确保对象不为 null。</li>
+<li>如果对象为 null，则非安全操作符会抛出 <code>NullPointerException</code>。</li>
+<li>非安全操作符应该小心使用，因为滥用它可能导致空指针异常。</li>
+<li>以下是示例用法：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> length: <span class="built_in">Int</span> = str!!.length <span class="comment">// 断言 str 不为 null，否则抛出异常</span></span><br><span class="line"><span class="keyword">val</span> firstChar: <span class="built_in">Char</span> = str!!.<span class="keyword">get</span>(<span class="number">0</span>) <span class="comment">// 断言 str 不为 null，否则抛出异常</span></span><br></pre></td></tr></table></figure>
+
+<p>在实际编程中，应尽量使用安全操作符（?.）来处理可空类型，以避免空指针异常。只有在确定对象不为 null 时才使用非安全操作符（!!）。</p>
+<p>另外，Kotlin 还提供了一些其他处理可空类型的函数和操作符，如 Elvis 操作符（?:）、安全转换操作符（as?）、非空断言操作符（!!）、let 函数等，可以根据具体情况选择合适的方式来处理可空类型。</p>
+<h3 id="数组："><a href="#数组：" class="headerlink" title="数组："></a>数组：</h3><p>在 Kotlin 中，数组是一种用于存储多个相同类型元素的数据结构。Kotlin 提供了两种类型的数组：可变数组和不可变数组。</p>
+<h4 id="1-可变数组："><a href="#1-可变数组：" class="headerlink" title="1.可变数组："></a>1.可变数组：</h4><ul>
+<li>可变数组在创建后可以进行修改，即可以添加、删除和修改元素。</li>
+<li>可以使用 <code>arrayOf()</code> 函数或者 <code>mutableListOf()</code> 函数创建可变数组。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> numbers: Array&lt;<span class="built_in">Int</span>&gt; = arrayOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>) <span class="comment">// 使用 arrayOf() 函数创建可变数组</span></span><br><span class="line"><span class="keyword">val</span> names: MutableList&lt;String&gt; = mutableListOf(<span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Bob&quot;</span>, <span class="string">&quot;Charlie&quot;</span>) <span class="comment">// 使用 mutableListOf() 函数创建可变列表</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-不可变数组："><a href="#2-不可变数组：" class="headerlink" title="2.不可变数组："></a>2.不可变数组：</h4><ul>
+<li>不可变数组在创建后不可修改，即不能添加、删除或修改元素。</li>
+<li>可以使用 <code>arrayOf()</code> 函数或者 <code>listOf()</code> 函数创建不可变数组。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> numbers: Array&lt;<span class="built_in">Int</span>&gt; = arrayOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>) <span class="comment">// 使用 arrayOf() 函数创建不可变数组</span></span><br><span class="line"><span class="keyword">val</span> names: List&lt;String&gt; = listOf(<span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Bob&quot;</span>, <span class="string">&quot;Charlie&quot;</span>) <span class="comment">// 使用 listOf() 函数创建不可变列表</span></span><br></pre></td></tr></table></figure>
+
+<p>对于数组，你可以通过索引访问其中的元素，并使用相应的方法和属性进行操作。例如，可以使用 <code>size</code> 属性获取数组的大小，使用 <code>get(index: Int)</code> 方法获取特定索引处的元素，使用 <code>set(index: Int, value: T)</code> 方法修改特定索引处的元素。</p>
+<p>示例代码：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">kotlin</span><br><span class="line"><span class="keyword">val</span> numbers: Array&lt;<span class="built_in">Int</span>&gt; = arrayOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</span><br><span class="line"><span class="keyword">val</span> firstNumber: <span class="built_in">Int</span> = numbers[<span class="number">0</span>] <span class="comment">// 获取第一个元素</span></span><br><span class="line">numbers[<span class="number">2</span>] = <span class="number">10</span> <span class="comment">// 修改第三个元素为 10</span></span><br><span class="line"><span class="keyword">val</span> size: <span class="built_in">Int</span> = numbers.size <span class="comment">// 获取数组大小</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Unit-："><a href="#Unit-：" class="headerlink" title="Unit ："></a>Unit ：</h3><p>在 Kotlin 中，<code>Unit</code> 是一种特殊的类型，用于表示没有返回值的函数或表达式。类似于 Java 中的 <code>void</code> 类型，但在 Kotlin 中，<code>Unit</code> 是一个真正的类型。</p>
+<p>加在方法上，表示该方法无返回值</p>
+<h3 id="条件判断："><a href="#条件判断：" class="headerlink" title="条件判断："></a>条件判断：</h3><p>在 Kotlin 中，条件判断有两种主要的方式：if 表达式和when 表达式。注意，此处的if和when都有返回值，可以作为一个表达式使用。</p>
+<h4 id="1-if-表达式："><a href="#1-if-表达式：" class="headerlink" title="1.if 表达式："></a>1.if 表达式：</h4><ul>
+<li>if 表达式用于根据条件执行不同的代码块。</li>
+<li>它可以作为表达式或语句使用。</li>
+<li>示例：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> x = <span class="number">10</span></span><br><span class="line"><span class="keyword">val</span> y = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> max = <span class="keyword">if</span> (x &gt; y) x <span class="keyword">else</span> y <span class="comment">// if 表达式作为表达式使用</span></span><br><span class="line"><span class="keyword">if</span> (x &gt; y) &#123;</span><br><span class="line">    println(<span class="string">&quot;x is greater&quot;</span>) <span class="comment">// if 表达式作为语句使用</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;y is greater&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-when-表达式："><a href="#2-when-表达式：" class="headerlink" title="2.when 表达式："></a>2.when 表达式：</h4><ul>
+<li>when 表达式类似于其他语言中的 switch 语句，但更加强大灵活。</li>
+<li>它根据给定的值匹配不同的分支，执行相应的代码块。</li>
+<li>示例：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> x = <span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">when</span> (x) &#123;</span><br><span class="line">    <span class="number">1</span> -&gt; println(<span class="string">&quot;x is 1&quot;</span>)</span><br><span class="line">    <span class="number">2</span>, <span class="number">3</span> -&gt; println(<span class="string">&quot;x is 2 or 3&quot;</span>)</span><br><span class="line">    <span class="keyword">in</span> <span class="number">4.</span><span class="number">.10</span> -&gt; println(<span class="string">&quot;x is between 4 and 10&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span> -&gt; println(<span class="string">&quot;x is not matched&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>表达式和语句：<ul>
+<li>在 Kotlin 中，if 和 when 都可以作为表达式（返回一个值）或语句（不返回值）使用。</li>
+<li>如果 if 或 when 用作表达式，则需要有一个返回值。可以使用条件体最后的表达式作为返回值。</li>
+<li>如果 if 或 when 用作语句，则没有返回值，只是执行相应的代码块。</li>
+</ul>
+</li>
+</ol>
+<p>此外，Kotlin 还支持其他条件判断的特性，如使用布尔表达式的简化形式，如 <code>if (condition) doSomething()</code>，以及在判断条件时使用区间、类型检查等。</p>
+<p>总之，Kotlin 中的条件判断主要通过 if 表达式和 when 表达式来实现，它们提供了灵活的条件分支和匹配的方式，适用于各种不同的条件判断场景。</p>
+<h3 id="循环："><a href="#循环：" class="headerlink" title="循环："></a>循环：</h3><p>for循环类似java中的foreach循环</p>
+<p>可以设置步长，step</p>
+<p>可以使用range类型表示范围</p>
+<h4 id="1-for-循环："><a href="#1-for-循环：" class="headerlink" title="1.for 循环："></a>1.for 循环：</h4><ul>
+<li>for 循环用于按照指定条件遍历集合或范围内的元素。</li>
+<li>可以使用关键字 <code>for</code> 和 <code>in</code> 配合使用，遍历集合或范围中的每个元素。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> numbers = listOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (number <span class="keyword">in</span> numbers) &#123;</span><br><span class="line">    println(number)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">1.</span><span class="number">.5</span>) &#123;</span><br><span class="line">    println(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在上述示例中，for 循环遍历了列表 <code>numbers</code> 中的每个元素，以及范围 <code>1..5</code> 中的每个整数。</li>
+</ul>
+<h4 id="2-while-循环："><a href="#2-while-循环：" class="headerlink" title="2.while 循环："></a>2.while 循环：</h4><ul>
+<li>while 循环用于根据指定条件重复执行一段代码块。</li>
+<li>在每次循环迭代之前，会检查指定的条件。只要条件满足，循环将继续执行。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (x &lt;= <span class="number">5</span>) &#123;</span><br><span class="line">    println(x)</span><br><span class="line">    x++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在上述示例中，while 循环将打印从 1 到 5 的整数。在每次循环迭代时，会检查条件 <code>x &lt;= 5</code>，只要条件为真，循环将继续执行。</p>
+<h4 id="跳出循环："><a href="#跳出循环：" class="headerlink" title="跳出循环："></a>跳出循环：</h4><p>在循环中，还可以使用关键字 <code>break</code> 和 <code>continue</code> 控制循环的流程：</p>
+<ul>
+<li><code>break</code> 关键字用于立即终止循环并跳出循环体。</li>
+<li><code>continue</code> 关键字用于跳过当前循环迭代，进入下一次迭代。</li>
+</ul>
+<h3 id="Elvis运算符"><a href="#Elvis运算符" class="headerlink" title="Elvis运算符"></a>Elvis运算符</h3><p>使用方式：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c = a?.length ?: <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p>如果a不为空，则返回a.length，否则返回0</p>
+<h3 id="判断符"><a href="#判断符" class="headerlink" title="判断符"></a>判断符</h3><p><code>==</code>：比较二者的内容，相当于equal</p>
+<p><code>===</code>：判断对象的地址是否相等</p>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614212943214.png" alt="image-20230614212943214"></p>
+<p>在 Kotlin 中，类是面向对象编程的基本组成单元，用于封装数据和行为。类是对象的模板，用于创建具体的对象实例。以下是 Kotlin 中类的一些关键特点和用法：</p>
+<h4 id="1-类的定义："><a href="#1-类的定义：" class="headerlink" title="1.类的定义："></a>1.类的定义：</h4><ul>
+<li>使用 <code>class</code> 关键字来定义类。</li>
+<li>可以包含属性（字段）和函数（方法）。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="comment">// 属性</span></span><br><span class="line">    <span class="keyword">var</span> name: String = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">var</span> age: <span class="built_in">Int</span> = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 函数</span></span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">sayHello</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;Hello, I&#x27;m <span class="variable">$name</span>&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-对象的创建："><a href="#2-对象的创建：" class="headerlink" title="2.对象的创建："></a>2.对象的创建：</h4><ul>
+<li>使用 <code>val</code> 或 <code>var</code> 关键字和类的构造函数来创建类的对象。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> person = Person() <span class="comment">// 创建 Person 类的对象</span></span><br><span class="line">person.name = <span class="string">&quot;Alice&quot;</span> <span class="comment">// 访问对象的属性</span></span><br><span class="line">person.age = <span class="number">25</span></span><br><span class="line">person.sayHello() <span class="comment">// 调用对象的函数</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-构造函数："><a href="#3-构造函数：" class="headerlink" title="3.构造函数："></a>3.构造函数：</h4><ul>
+<li><p>构造函数必须要用constructor声明</p>
+</li>
+<li><p>类可以有一个主构造函数和多个次构造函数。</p>
+</li>
+<li><p>主构造函数可以在类头部声明，次构造函数在类体内声明。</p>
+<h5 id="主构造函数："><a href="#主构造函数：" class="headerlink" title="主构造函数："></a>主构造函数：</h5><ul>
+<li>主构造函数是类头部的一部分，直接跟在类名后面。</li>
+<li>主构造函数可以拥有参数，用于接收对象的初始值。</li>
+<li>主构造函数可以包含可见性修饰符（如 <code>public</code>、<code>private</code>）和其他修饰符（如 <code>constructor</code>）。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>(<span class="keyword">val</span> name: String, <span class="keyword">var</span> age: <span class="built_in">Int</span>) &#123;</span><br><span class="line">    <span class="comment">// 主构造函数的参数可以直接用于初始化属性</span></span><br><span class="line">    <span class="comment">// 在类内部，主构造函数的参数可以直接使用，无需额外声明属性</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="次级构造函数"><a href="#次级构造函数" class="headerlink" title="次级构造函数"></a>次级构造函数</h5><ul>
+<li>次构造函数是类体内的函数，用于提供额外的构造方式。</li>
+<li>次构造函数使用 <code>constructor</code> 关键字声明，并可以拥有自己的参数。</li>
+<li>次构造函数必须委托给主构造函数或其他次构造函数，使用 <code>this</code> 关键字调用。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>(<span class="keyword">val</span> name: String, <span class="keyword">var</span> age: <span class="built_in">Int</span>) &#123;</span><br><span class="line">    <span class="comment">// 主构造函数</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">constructor</span>(name: String) : <span class="keyword">this</span>(name, <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="comment">// 次构造函数委托给主构造函数，并提供默认值</span></span><br><span class="line">        <span class="comment">// 在次构造函数中可以执行额外的逻辑</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">constructor</span>() : <span class="keyword">this</span>(<span class="string">&quot;&quot;</span>, <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="comment">// 另一个次构造函数委托给主构造函数，并提供默认值</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-继承："><a href="#4-继承：" class="headerlink" title="4.继承："></a>4.继承：</h4><p>（父类必须使用open方法， 因为默认是final，类中的方法想要实现也是如此）</p>
+<ul>
+<li>使用 <code>: </code>后面跟上父类来实现继承。</li>
+<li>可以继承单个类，但可以实现多个接口。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">open</span> <span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">open</span> <span class="function"><span class="keyword">fun</span> <span class="title">sound</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;The animal makes a sound&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> : <span class="type">Animal</span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">sound</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;The dog barks&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-可见性修饰符："><a href="#5-可见性修饰符：" class="headerlink" title="5.可见性修饰符："></a>5.可见性修饰符：</h4><ul>
+<li>Kotlin 提供了多种可见性修饰符，如 <code>public</code>、<code>private</code>、<code>protected</code> 和 <code>internal</code>，用于控制类、属性和函数的可见性范围。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">val</span> privateProperty = <span class="number">10</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">val</span> protectedProperty = <span class="number">20</span></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">val</span> internalProperty = <span class="number">30</span></span><br><span class="line">    <span class="keyword">val</span> publicProperty = <span class="number">40</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-数据类："><a href="#6-数据类：" class="headerlink" title="6.数据类："></a>6.数据类：</h4><ul>
+<li>使用 <code>data</code> 关键字来创建数据类，用于存储和传递数据。</li>
+<li>数据类自动提供了一些常用函数，如 <code>equals()</code>、<code>hashCode()</code>、<code>toString()</code> 等。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">data</span> <span class="keyword">class</span> <span class="title class_">Person</span>(<span class="keyword">val</span> name: String, <span class="keyword">val</span> age: <span class="built_in">Int</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="7-内部类（Inner-Class）"><a href="#7-内部类（Inner-Class）" class="headerlink" title="7.内部类（Inner Class）"></a>7.内部类（Inner Class）</h4><ul>
+<li>内部类是定义在另一个类内部的类。</li>
+<li>内部类可以访问外部类的成员，包括私有成员。</li>
+<li>内部类持有对外部类对象的引用。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Outer</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">val</span> outerProperty = <span class="number">10</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">inner</span> <span class="keyword">class</span> <span class="title class_">Inner</span> &#123;</span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">printOuterProperty</span><span class="params">()</span></span> &#123;</span><br><span class="line">            println(outerProperty) <span class="comment">// 访问外部类的属性</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="8-嵌套类（Nested-Class）："><a href="#8-嵌套类（Nested-Class）：" class="headerlink" title="8.嵌套类（Nested Class）："></a>8.嵌套类（Nested Class）：</h4><ul>
+<li>嵌套类是定义在另一个类内部的类。</li>
+<li>嵌套类不能访问外部类的成员，除非被标记为 <code>inner</code> 类型。</li>
+<li>嵌套类不持有对外部类对象的引用。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Outer</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">val</span> outerProperty = <span class="number">10</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">Nested</span> &#123;</span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">printOuterProperty</span><span class="params">()</span></span> &#123;</span><br><span class="line">            <span class="comment">// 无法访问外部类的属性</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="9-局部内部类（Local-Inner-Class）："><a href="#9-局部内部类（Local-Inner-Class）：" class="headerlink" title="9.局部内部类（Local Inner Class）："></a>9.局部内部类（Local Inner Class）：</h4><ul>
+<li>局部内部类是定义在函数或代码块内部的类。</li>
+<li>局部内部类可以访问外部类的成员和局部变量（要求为 <code>final</code> 或者是 Kotlin 1.5+ 版本）。</li>
+<li>局部内部类不持有对外部类对象的引用。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">outerFunction</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> outerProperty = <span class="number">10</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">LocalInner</span> &#123;</span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">printOuterProperty</span><span class="params">()</span></span> &#123;</span><br><span class="line">            println(outerProperty) <span class="comment">// 访问外部类的局部变量</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">val</span> localInner = LocalInner()</span><br><span class="line">    localInner.printOuterProperty()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="10-匿名内部类（Anonymous-Inner-Class）："><a href="#10-匿名内部类（Anonymous-Inner-Class）：" class="headerlink" title="10.匿名内部类（Anonymous Inner Class）："></a>10.匿名内部类（Anonymous Inner Class）：</h4><ul>
+<li>匿名内部类是在实例化接口或抽象类时，直接提供其实现的类。</li>
+<li>匿名内部类可以包含实现接口的函数或重写抽象类的函数。</li>
+<li>匿名内部类没有类名，只是提供一个对象实例。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">OnClickListener</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">onClick</span><span class="params">()</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> button = Button()</span><br><span class="line">button.setOnClickListener(<span class="keyword">object</span> : OnClickListener &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onClick</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;Button clicked&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="11-密封类（Sealed-Class）："><a href="#11-密封类（Sealed-Class）：" class="headerlink" title="11.密封类（Sealed Class）："></a>11.密封类（Sealed Class）：</h4><ul>
+<li>密封类是一种特殊的抽象类，用于表示受限制的类继承结构。</li>
+<li>密封类的子类必须定义在同一文件中，并且不能在类外部进行扩展。</li>
+<li>密封类常用于表示有限的、固定的类型集合，以及用于实现模式匹配等场景。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title class_">Result</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Success</span>(<span class="keyword">val</span> <span class="keyword">data</span>: String) : Result()</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Error</span>(<span class="keyword">val</span> message: String) : Result()</span><br></pre></td></tr></table></figure>
+
+<h4 id="12-抽象类（Abstract-Class）："><a href="#12-抽象类（Abstract-Class）：" class="headerlink" title="12.抽象类（Abstract Class）："></a>12.抽象类（Abstract Class）：</h4><p>使用abstract修饰，接口使用interface定义</p>
+<ul>
+<li>抽象类是不能被实例化的类，用于定义共享的属性和行为。</li>
+<li>抽象类可以包含抽象函数和具体函数。</li>
+<li>抽象函数没有具体的实现，需要在子类中进行重写。</li>
+<li>子类必须实现抽象类中的所有抽象函数，或者是子类也是抽象类。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Shape</span> &#123;</span><br><span class="line">    <span class="keyword">abstract</span> <span class="function"><span class="keyword">fun</span> <span class="title">calculateArea</span><span class="params">()</span></span>: <span class="built_in">Double</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">printDescription</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;This is a shape.&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span>(<span class="keyword">val</span> radius: <span class="built_in">Double</span>) : Shape() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">calculateArea</span><span class="params">()</span></span>: <span class="built_in">Double</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> Math.PI * radius * radius</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="13-属性的set、get方法"><a href="#13-属性的set、get方法" class="headerlink" title="13.属性的set、get方法"></a>13.属性的set、get方法</h4><p>在 Kotlin 中，类的属性可以有默认的 <code>get</code> 和 <code>set</code> 方法。这些方法用于访问和修改属性的值。当定义一个属性时，Kotlin 会自动生成默认的 <code>get</code> 和 <code>set</code> 方法，也可以自定义这些方法的行为。</p>
+<ol>
+<li>默认的 <code>get</code> 方法：<ul>
+<li>默认的 <code>get</code> 方法用于获取属性的值。</li>
+<li>语法上不需要显式地定义 <code>get</code> 方法，直接使用属性名即可访问属性的值。</li>
+<li>示例代码：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> name: String = <span class="string">&quot;John&quot;</span> <span class="comment">// 默认的 get 方法</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 其他类成员和函数</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> person = Person()</span><br><span class="line">println(person.name) <span class="comment">// 使用默认的 get 方法获取属性值</span></span><br></pre></td></tr></table></figure>
+
+<p>默认的 <code>set</code> 方法：</p>
+<ul>
+<li>默认的 <code>set</code> 方法用于修改属性的值。</li>
+<li>语法上不需要显式地定义 <code>set</code> 方法，可以直接给属性赋值来修改属性的值。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> age: <span class="built_in">Int</span> = <span class="number">25</span> <span class="comment">// 默认的 set 方法</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 其他类成员和函数</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> person = Person()</span><br><span class="line">person.age = <span class="number">30</span> <span class="comment">// 使用默认的 set 方法修改属性值</span></span><br></pre></td></tr></table></figure>
+
+<p>自定义 <code>get</code> 和 <code>set</code> 方法：</p>
+<ul>
+<li>可以自定义 <code>get</code> 和 <code>set</code> 方法的行为，以满足特定需求。</li>
+<li>使用 <code>field</code> 关键字表示属性自身，在 <code>get</code> 和 <code>set</code> 方法中可以操作 <code>field</code> 来读取或修改属性的值。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> age: <span class="built_in">Int</span> = <span class="number">25</span></span><br><span class="line">        <span class="keyword">get</span>() &#123;</span><br><span class="line">            println(<span class="string">&quot;Custom get method&quot;</span>)</span><br><span class="line">            <span class="keyword">return</span> field</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">set</span>(value) &#123;</span><br><span class="line">            println(<span class="string">&quot;Custom set method&quot;</span>)</span><br><span class="line">            field = value</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 其他类成员和函数</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> person = Person()</span><br><span class="line">person.age = <span class="number">30</span> <span class="comment">// 调用自定义的 set 方法</span></span><br><span class="line">println(person.age) <span class="comment">// 调用自定义的 get 方法</span></span><br></pre></td></tr></table></figure>
+
+<h5 id=""><a href="#" class="headerlink" title=""></a></h5><h3 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h3><h5 id="定义函数："><a href="#定义函数：" class="headerlink" title="定义函数："></a>定义函数：</h5><p><strong><code>fun</code>,函数由函数名、参数列表、返回类型和函数体组成。</strong></p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">functionName</span><span class="params">(parameter1: <span class="type">Type1</span>, parameter2: <span class="type">Type2</span>, ...)</span></span>: ReturnType &#123;</span><br><span class="line">    <span class="comment">// 函数体</span></span><br><span class="line">    <span class="comment">// 执行任务</span></span><br><span class="line">    <span class="comment">// 返回结果</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="默认参数："><a href="#默认参数：" class="headerlink" title="默认参数："></a>默认参数：</h5><ul>
+<li>函数可以定义默认参数，简化函数调用时的参数传递。</li>
+<li>默认参数在函数定义中指定，可以在调用函数时省略。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">greet</span><span class="params">(name: <span class="type">String</span>, message: <span class="type">String</span> = <span class="string">&quot;Hello&quot;</span>)</span></span> &#123;</span><br><span class="line">    println(<span class="string">&quot;<span class="variable">$message</span>, <span class="variable">$name</span>!&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">greet(<span class="string">&quot;Bob&quot;</span>) <span class="comment">// 输出：&quot;Hello, Bob!&quot;</span></span><br><span class="line">greet(<span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Hi&quot;</span>) <span class="comment">// 输出：&quot;Hi, Alice!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="可变参数："><a href="#可变参数：" class="headerlink" title="可变参数："></a>可变参数：</h5><ul>
+<li>函数可以接收可变数量的参数，称为可变参数（Varargs）。</li>
+<li>可变参数在函数定义中以 <code>vararg</code> 关键字声明，并在函数体内视为数组。</li>
+<li>调用函数时，可变参数可以接收任意数量的参数值，包括零个。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">printNumbers</span><span class="params">(<span class="keyword">vararg</span> numbers: <span class="type">Int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (number <span class="keyword">in</span> numbers) &#123;</span><br><span class="line">        println(number)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">printNumbers(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) <span class="comment">// 输出：1 2 3</span></span><br><span class="line">printNumbers() <span class="comment">// 输出：（无输出）</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数:"></a>高阶函数:</h5><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614215618506.png" alt="image-20230614215618506"></p>
+<p>高阶函数（Higher-Order Functions）是 Kotlin 中的一种特殊函数，它可以接收一个或多个函数作为参数，并/或返回一个函数。高阶函数可以将函数作为一等公民对待，使得函数可以像普通值一样进行传递、操作和返回。</p>
+<p>下面是一些关于高阶函数的简要介绍：</p>
+<h6 id="1-函数类型（Function-Types）："><a href="#1-函数类型（Function-Types）：" class="headerlink" title="1.函数类型（Function Types）："></a>1.函数类型（Function Types）：</h6><ul>
+<li>在 Kotlin 中，函数具有类型，可以将函数类型作为参数或返回值。</li>
+<li>函数类型由参数类型和返回类型组成。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数类型：接收两个 Int 参数并返回 Int</span></span><br><span class="line"><span class="keyword">val</span> add: (<span class="built_in">Int</span>, <span class="built_in">Int</span>) -&gt; <span class="built_in">Int</span> = &#123; a, b -&gt; a + b &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数类型：接收一个 String 参数并返回 Unit（无返回值）</span></span><br><span class="line"><span class="keyword">val</span> printMessage: (String) -&gt; <span class="built_in">Unit</span> = &#123; message -&gt; println(message) &#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-函数作为参数："><a href="#2-函数作为参数：" class="headerlink" title="2.函数作为参数："></a>2.函数作为参数：</h6><ul>
+<li>高阶函数可以接收一个或多个函数作为参数。</li>
+<li>在函数体内部可以调用传递的函数。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">calculate</span><span class="params">(a: <span class="type">Int</span>, b: <span class="type">Int</span>, operation: (<span class="type">Int</span>, <span class="type">Int</span>) -&gt; <span class="type">Int</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> operation(a, b)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> sum = calculate(<span class="number">5</span>, <span class="number">3</span>, &#123; a, b -&gt; a + b &#125;)</span><br><span class="line"><span class="keyword">val</span> difference = calculate(<span class="number">10</span>, <span class="number">4</span>, &#123; a, b -&gt; a - b &#125;)</span><br></pre></td></tr></table></figure>
+
+<h6 id="3-函数作为返回值："><a href="#3-函数作为返回值：" class="headerlink" title="3.函数作为返回值："></a>3.函数作为返回值：</h6><ul>
+<li>高阶函数可以返回一个函数作为结果。</li>
+<li>返回的函数可以在调用高阶函数后被使用。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">operation</span><span class="params">()</span></span>: (<span class="built_in">Int</span>) -&gt; <span class="built_in">Int</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123; number -&gt; number * <span class="number">2</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> double = operation()</span><br><span class="line"><span class="keyword">val</span> result = double(<span class="number">5</span>) <span class="comment">// 返回 10</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="4-Lambda-表达式："><a href="#4-Lambda-表达式：" class="headerlink" title="4.Lambda 表达式："></a>4.Lambda 表达式：</h6><ul>
+<li>Lambda 表达式是一种简洁的语法形式，用于定义函数字面值。</li>
+<li>Lambda 表达式可以用作高阶函数的参数。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> sum = calculate(<span class="number">5</span>, <span class="number">3</span>) &#123; a, b -&gt; a + b &#125;</span><br><span class="line"><span class="keyword">val</span> difference = calculate(<span class="number">10</span>, <span class="number">4</span>) &#123; a, b -&gt; a - b &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数据容器"><a href="#数据容器" class="headerlink" title="数据容器"></a>数据容器</h3><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614220731796.png" alt="image-20230614220731796"></p>
+<h3 id="Object："><a href="#Object：" class="headerlink" title="Object："></a>Object：</h3><h4 id="三种含义："><a href="#三种含义：" class="headerlink" title="三种含义："></a>三种含义：</h4><ul>
+<li><p>单例</p>
+<ul>
+<li>使用关键字 “object” 可以创建一个单例对象，该对象在整个程序的生命周期中只存在一个实例。</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">object</span> MySingleton &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">doSomething</span><span class="params">()</span></span> &#123;</span><br><span class="line">        println(<span class="string">&quot;Doing something...&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用单例对象</span></span><br><span class="line">MySingleton.doSomething()</span><br></pre></td></tr></table></figure></li>
+<li><p>伴随对象</p>
+<ul>
+<li>在类中使用关键字 “companion object” 可以定义一个伴随对象，伴随对象与类的实例无关，可以直接访问类中的成员。</li>
+<li>伴随对象常用于在类级别上组织静态成员。</li>
+<li>一个类只能有一个伴随对象。</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">companion</span> <span class="keyword">object</span> &#123;</span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">doSomething</span><span class="params">()</span></span> &#123;</span><br><span class="line">            println(<span class="string">&quot;Doing something...&quot;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用伴随对象</span></span><br><span class="line">MyClass.doSomething()</span><br></pre></td></tr></table></figure></li>
+<li><p>对象表示式，实现匿名类对象</p>
+<ul>
+<li>使用对象表达式可以在需要创建匿名类的地方直接定义并实例化一个对象。</li>
+<li>对象表达式允许在创建对象的同时重写、扩展或实现某个类、接口或抽象类的方法。</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">MyInterface</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">doSomething</span><span class="params">()</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> obj = <span class="keyword">object</span> : MyInterface &#123;</span><br><span class="line">        <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">doSomething</span><span class="params">()</span></span> &#123;</span><br><span class="line">            println(<span class="string">&quot;Doing something...&quot;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    obj.doSomething()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="二、Android基础"><a href="#二、Android基础" class="headerlink" title="二、Android基础"></a>二、Android基础</h2><h3 id="系统框架："><a href="#系统框架：" class="headerlink" title="系统框架："></a>系统框架：</h3><ul>
+<li>应用程序层</li>
+<li>应用程序框架层</li>
+<li>系统库及Android运行时</li>
+<li>Linux核心层</li>
+</ul>
+<h3 id="四大组件："><a href="#四大组件：" class="headerlink" title="四大组件："></a>四大组件：</h3><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614224652211.png" alt="image-20230614224652211"></p>
+<h3 id="1、Activity（活动）"><a href="#1、Activity（活动）" class="headerlink" title="1、Activity（活动）"></a>1、Activity（活动）</h3><ul>
+<li>有界面、生命周期、需要在AndroidManifest.xml中声明</li>
+<li>通过堆栈来管理</li>
+</ul>
+<h4 id="1-四大启动模式"><a href="#1-四大启动模式" class="headerlink" title="1.四大启动模式"></a>1.四大启动模式</h4><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614221714669.png" alt="image-20230614221714669"></p>
+<h4 id="2-生命周期"><a href="#2-生命周期" class="headerlink" title="2.生命周期"></a>2.生命周期</h4><p>onCreate -&gt; onStart -&gt; onResume -&gt; onPause -onStop -&gt; onDestroy</p>
+<p><strong>注意back和home键的区别</strong></p>
+<p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614221836160.png" alt="image-20230614221836160"></p>
+<h4 id="3-启动与跳转"><a href="#3-启动与跳转" class="headerlink" title="3.启动与跳转"></a>3.启动与跳转</h4><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614222146253.png" alt="image-20230614222146253"></p>
+<p>显示Intent（Explicit Intent）是指明确指定目标组件的Intent。它通常用于启动应用程序内的特定组件，例如启动另一个Activity、启动Service或发送广播。显示Intent通过指定目标组件的类名或组件的包名和类名来明确指定要启动的组件。</p>
+<p>隐式Intent（Implicit Intent）是没有明确指定目标组件的Intent。它只描述了要执行的操作、要传递的数据以及可能的类别等信息。隐式Intent允许系统根据给定的操作和数据来找到最佳的组件来处理该Intent。系统会根据Intent中的信息，查找能够响应该Intent的组件，并将该Intent发送到最合适的组件。</p>
+<p>隐式Intent的匹配是通过Intent-filter来实现的。它描述了组件能够响应的意图。Intent-filter包含以下三个主要部分：</p>
+<ol>
+<li>Action（动作）：指定要执行的操作，例如”android.intent.action.VIEW”表示查看操作、”android.intent.action.SEND”表示发送操作等。一个Intent-filter可以指定一个或多个Action。</li>
+<li>Category（类别）：指定与组件相关的额外信息。例如，一个Activity可以指定”android.intent.category.DEFAULT”类别来指示它是默认的操作，或者指定”android.intent.category.BROWSABLE”类别来指示它可以被浏览器打开。</li>
+<li>Data（数据）：指定Intent操作要处理的数据。数据可以是一个URI（统一资源标识符），例如网址、文件路径等。通过匹配Intent-filter中指定的数据，系统可以找到能够处理该数据的组件。</li>
+</ol>
+<h4 id="4-UI布局"><a href="#4-UI布局" class="headerlink" title="4.UI布局"></a>4.UI布局</h4><h5 id="Fragment生命周期："><a href="#Fragment生命周期：" class="headerlink" title="Fragment生命周期："></a><strong>Fragment生命周期</strong>：</h5><ul>
+<li>onAttach</li>
+<li>onCreate</li>
+<li>onCreateView</li>
+<li>onViewCreated</li>
+<li>onActivityCreated</li>
+<li>onStart</li>
+<li>onResume</li>
+<li>onPause</li>
+<li>onStop</li>
+<li>onDestroyView</li>
+<li>onDestroy</li>
+<li>onDetach</li>
+</ul>
+<h5 id="默认布局："><a href="#默认布局：" class="headerlink" title="默认布局："></a>默认布局：</h5><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614222219363.png" alt="image-20230614222219363"></p>
+<p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614222330338.png" alt="image-20230614222330338"></p>
+<h5 id="常用属性："><a href="#常用属性：" class="headerlink" title="常用属性："></a><strong>常用属性：</strong></h5><ul>
+<li>match parent：子组件随父组件宽高</li>
+<li>warp content：子组件宽高由内容填充</li>
+<li>@id+/id-name：设置控件id，@+表示这个id是新建的，没+号表示，引用在xml中配置好的</li>
+</ul>
+<h5 id="常用方法："><a href="#常用方法：" class="headerlink" title="常用方法："></a><strong>常用方法：</strong></h5><ul>
+<li>setContentView：</li>
+<li>R.layout.id</li>
+</ul>
+<h5 id="常用尺寸单位："><a href="#常用尺寸单位：" class="headerlink" title="常用尺寸单位："></a><strong>常用尺寸单位：</strong></h5><ul>
+<li>dp控件大小</li>
+<li>sp文字大小</li>
+</ul>
+<h5 id="常用控件："><a href="#常用控件：" class="headerlink" title="常用控件："></a>常用控件：</h5><ul>
+<li>webView：用于在应用程序中显示网页内容。它是基于 WebView 组件的，可以加载和显示网页、HTML 内容、JavaScript、CSS 样式等。</li>
+<li>checkbox：属性ischecked，是否被选中</li>
+<li>Snackbar：类似toask，不交互时，会消失，也可以配置交互行为，比如某个广告弹窗，可以手动关，也可以自动关</li>
+</ul>
+<h5 id="一些列表控件："><a href="#一些列表控件：" class="headerlink" title="一些列表控件："></a>一些列表控件：</h5><ul>
+<li>ListView： Android 中用于显示垂直滚动列表的控件。它可以展示一个垂直方向上的数据集合，并支持用户滚动、选择和交互。<ul>
+<li>适配器继承自BaseAdapter 或其子类，需要实现关键方法：<code>getCount()</code>、<code>getItem()</code>、<code>getItemId()</code> 和 <code>getView()</code>。</li>
+</ul>
+</li>
+<li>RecyclerView：Android 中用于显示大量数据集合的灵活且高效的控件。它是替代 ListView 和 GridView 的推荐选择<ul>
+<li>适配器继承自RecyclerView.Adapter，需要实现关键方法：<code>onCreateViewHolder()</code>、<code>onBindViewHolder()</code> 和 <code>getItemCount()</code>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2、Service（服务）"><a href="#2、Service（服务）" class="headerlink" title="2、Service（服务）"></a>2、Service（服务）</h3><h3 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h3><p>服务（Service）是 Android 平台提供的一种组件，用于在后台执行长时间运行的操作或处理一些独立于界面的任务。服务在 Android 应用程序中具有以下作用：</p>
+<ol>
+<li>后台任务执行：服务可以在后台执行长时间运行的任务，而不会受到用户界面的限制。例如，下载文件、播放音乐、处理数据同步等操作可以放在服务中进行，而不会中断或影响用户的交互体验。</li>
+<li>资源共享：服务可以作为一个独立的组件，供其他组件共享资源或数据。多个组件可以绑定到同一个服务上，并通过服务提供的接口进行通信和数据交换。这样可以避免数据冗余和资源重复创建。</li>
+<li>跨组件通信：服务可以作为组件之间的中介，实现跨组件的通信。不同组件（如 Activity、Fragment、BroadcastReceiver）可以通过绑定服务或发送广播与服务进行通信，实现数据传递和功能调用。</li>
+<li>前台通知：服务可以将自身提升为前台服务，通过发送通知显示在状态栏中，并且在通知被移除前一直处于运行状态。这在需要保持服务持续运行且用户可见的场景中非常有用，如音乐播放器、定位服务等。</li>
+<li>生命周期管理：服务具有自己的生命周期，可以通过 onStartCommand() 方法或 onBind() 方法来启动和停止服务。这样可以根据应用程序的需求来控制服务的生命周期，并确保服务在适当的时候被启动或停止。</li>
+</ol>
+<p>总结：</p>
+<ul>
+<li>服务允许在后台执行长时间运行的任务，不受用户界面限制。</li>
+<li>服务可以作为资源共享和跨组件通信的中介。</li>
+<li>服务可以通过前台通知将自身提升为可见状态。</li>
+<li>服务具有自己的生命周期，可以根据需求进行启动和停止。</li>
+</ul>
+<h3 id="1-启动式服务（start是启动式）"><a href="#1-启动式服务（start是启动式）" class="headerlink" title="1.启动式服务（start是启动式）"></a>1.启动式服务（start是启动式）</h3><h3 id="2-绑定式服务（bind是绑定式）"><a href="#2-绑定式服务（bind是绑定式）" class="headerlink" title="2.绑定式服务（bind是绑定式）"></a>2.绑定式服务（bind是绑定式）</h3><h3 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h3><ol>
+<li>启动式服务（Started Service）：<ul>
+<li>启动式服务通过调用 <code>startService()</code> 方法启动，并在后台运行独立于调用者的生命周期。</li>
+<li>启动式服务不与调用者直接绑定，一旦启动，可以长时间运行，即使启动它的组件被销毁。</li>
+<li>启动式服务适用于执行一次性任务、执行后台操作、播放音乐等不需要与调用者进行持续交互的场景。</li>
+<li>启动式服务需要在任务完成后调用 <code>stopSelf()</code> 或 <code>stopService()</code> 方法来停止服务。</li>
+</ul>
+</li>
+<li>绑定式服务（Bound Service）：<ul>
+<li>绑定式服务通过调用 <code>bindService()</code> 方法与调用者绑定，并与调用者共享生命周期。</li>
+<li>绑定式服务与调用者建立关联后，可以通过返回的 Binder 对象与调用者进行交互，调用者可以调用服务中的方法。</li>
+<li>绑定式服务适用于需要与调用者进行交互、共享数据或提供特定功能接口的场景。</li>
+<li>绑定式服务需要在调用者不再需要服务时调用 <code>unbindService()</code> 方法解除绑定。</li>
+</ul>
+</li>
+</ol>
+<p>总结：</p>
+<ul>
+<li>启动式服务适用于一次性任务、后台操作、长时间运行的任务，不需要与调用者持续交互。</li>
+<li>绑定式服务适用于需要与调用者交互、共享数据或提供特定功能接口的场景。</li>
+</ul>
+<p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614223703675.png" alt="image-20230614223703675"></p>
+<h3 id="创建服务："><a href="#创建服务：" class="headerlink" title="创建服务："></a>创建服务：</h3><p>在 Android 中，创建服务的方式有两种：启动式服务（Started Service）和绑定式服务（Bound Service）。下面分别介绍这两种方式的创建方法：</p>
+<h4 id="1-启动式服务（Started-Service）的创建："><a href="#1-启动式服务（Started-Service）的创建：" class="headerlink" title="1.启动式服务（Started Service）的创建："></a>1.启动式服务（Started Service）的创建：</h4><ul>
+<li>创建一个继承自 Service 的子类，并实现必要的方法，如 onStartCommand() 或 onCreate()。</li>
+<li>在 AndroidManifest.xml 文件中声明服务，并指定服务的名称和所属的进程（可选）。</li>
+<li>通过调用 startService() 方法来启动服务。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyService</span> : <span class="type">Service</span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onStartCommand</span><span class="params">(intent: <span class="type">Intent</span>?, flags: <span class="type">Int</span>, startId: <span class="type">Int</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">        <span class="comment">// 在此处执行服务的操作和逻辑</span></span><br><span class="line">        <span class="keyword">return</span> START_STICKY <span class="comment">// 指定服务的启动模式</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onBind</span><span class="params">(intent: <span class="type">Intent</span>?)</span></span>: IBinder? &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span> <span class="comment">// 因为是启动式服务，无需实现此方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-绑定式服务（Bound-Service）的创建："><a href="#2-绑定式服务（Bound-Service）的创建：" class="headerlink" title="2.绑定式服务（Bound Service）的创建："></a>2.绑定式服务（Bound Service）的创建：</h4><ul>
+<li>创建一个继承自 Service 的子类，并实现必要的方法，如 onBind() 或 onCreate()。</li>
+<li>在 AndroidManifest.xml 文件中声明服务，并指定服务的名称和所属的进程（可选）。</li>
+<li>创建一个继承自 Binder 的子类，并在服务的 onBind() 方法中返回该 Binder 对象，以便与调用者进行交互。</li>
+<li>通过调用 bindService() 方法来绑定服务。</li>
+<li>示例代码：</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyService</span> : <span class="type">Service</span>() &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">val</span> binder = MyBinder()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onBind</span><span class="params">(intent: <span class="type">Intent</span>?)</span></span>: IBinder? &#123;</span><br><span class="line">        <span class="keyword">return</span> binder</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">inner</span> <span class="keyword">class</span> <span class="title class_">MyBinder</span> : <span class="type">Binder</span>() &#123;</span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">getService</span><span class="params">()</span></span>: MyService &#123;</span><br><span class="line">            <span class="keyword">return</span> MyService.<span class="keyword">this</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，无论是启动式服务还是绑定式服务，都需要在 AndroidManifest.xml 文件中进行声明，以便在应用程序中进行访问和使用。</p>
+<p>总结：</p>
+<ul>
+<li>启动式服务的创建需要继承自 Service 的子类，并实现必要的方法，通过调用 startService() 方法来启动服务。</li>
+<li>绑定式服务的创建需要继承自 Service 的子类，并实现必要的方法，通过返回一个 Binder 对象与调用者进行绑定和交互，通过调用 bindService() 方法来绑定服务。</li>
+<li>无论是启动式服务还是绑定式服务，都需要在 AndroidManifest.xml 文件中进行声明。</li>
+</ul>
+<h3 id="3、BroadcastReceiver（广播）"><a href="#3、BroadcastReceiver（广播）" class="headerlink" title="3、BroadcastReceiver（广播）"></a>3、BroadcastReceiver（广播）</h3><p>广播（Broadcast）是 Android 中一种用于在应用程序内或应用程序之间传递消息和事件的机制。通过广播，应用程序可以发送消息（广播）并让其他组件（接收者）接收并处理这些消息。以下是广播的一些要点：</p>
+<ol>
+<li>广播发送者（Broadcast Sender）：<ul>
+<li>广播发送者是发送广播的组件，可以是应用程序中的任何组件，如 Activity、Service、BroadcastReceiver 等。</li>
+<li>广播发送者通过调用 <code>sendBroadcast()</code>、<code>sendOrderedBroadcast()</code> 或 <code>sendStickyBroadcast()</code> 等方法发送广播。</li>
+<li>广播发送者需要创建一个 Intent 对象，并将其用作广播的载体，可以在 Intent 中携带附加数据。</li>
+</ul>
+</li>
+<li>广播接收者（Broadcast Receiver）：<ul>
+<li>广播接收者是接收广播的组件，可以是应用程序内的组件或其他应用程序的组件。</li>
+<li>广播接收者需要继承自 BroadcastReceiver 并实现 <code>onReceive()</code> 方法，用于接收和处理广播。</li>
+<li>广播接收者可以通过在 AndroidManifest.xml 文件中声明，或动态注册（通过代码注册）来注册。</li>
+</ul>
+</li>
+<li>广播类型：<ul>
+<li>标准广播（Normal Broadcast）：以异步方式传递给所有匹配的接收者，接收者之间无序接收广播。</li>
+<li>有序广播（Ordered Broadcast）：以同步方式传递给所有匹配的接收者，并按照优先级依次接收广播。</li>
+<li>粘性广播（Sticky Broadcast）：被发送后仍然保留在系统中，允许接收者在稍后注册时接收广播。</li>
+</ul>
+</li>
+<li>广播接收者的注册：<ul>
+<li>静态注册：在 AndroidManifest.xml 文件中声明广播接收者，并指定其接收的广播类型和优先级。</li>
+<li>动态注册：通过在代码中调用 <code>registerReceiver()</code> 方法来动态注册广播接收者，并在不需要接收广播时调用 <code>unregisterReceiver()</code> 方法解除注册。</li>
+</ul>
+</li>
+</ol>
+<p>广播机制允许应用程序内部或不同应用程序之间的组件进行通信，可以用于实现一些事件的广播通知、系统级别的广播监听、应用程序之间的消息传递等。广播是 Android 中一种重要的组件通信方式，提供了灵活的消息传递机制。</p>
+<h3 id="4、Content-Provider（数据分享）"><a href="#4、Content-Provider（数据分享）" class="headerlink" title="4、Content Provider（数据分享）"></a>4、Content Provider（数据分享）</h3><h4 id="简介：-1"><a href="#简介：-1" class="headerlink" title="简介："></a>简介：</h4><p>Content Provider（内容提供者）是 Android 中的一种组件，用于管理应用程序之间共享的数据，并提供对这些数据的安全访问。Content Provider 允许应用程序之间通过标准化的接口进行数据交换和共享，同时提供了数据的增删改查等操作。</p>
+<p>以下是 Content Provider 的一些要点：</p>
+<ol>
+<li>数据共享：Content Provider 提供了一种机制，使得应用程序可以共享自己的数据给其他应用程序访问。这些数据可以是应用程序内部的数据，也可以是来自外部存储、数据库或网络的数据。</li>
+<li>数据访问控制：Content Provider 可以通过权限设置和 URI 权限匹配等方式对数据进行访问控制，确保只有具备相应权限的应用程序才能访问和修改数据。</li>
+<li>标准化接口：Content Provider 使用标准化的接口和操作方法（如查询、插入、更新和删除）来对数据进行操作，这样不同的应用程序可以以统一的方式访问和操作数据。</li>
+<li>URI（Uniform Resource Identifier）：URI 是 Content Provider 中用于标识和定位数据的唯一标识符。应用程序可以通过指定 URI 来访问 Content Provider 中的数据。</li>
+<li>内容观察者（Content Observer）：Content Provider 支持内容观察者模式，即应用程序可以注册内容观察者来监听数据的变化，当数据发生变化时，内容观察者将收到通知。</li>
+<li>隐式访问和显式访问：Content Provider 可以通过隐式访问和显式访问两种方式来提供数据访问。隐式访问使用 URI 匹配规则，可以由不同的应用程序访问同一个 Content Provider。显式访问使用指定的 Content Provider 名称，只能由特定的应用程序访问。</li>
+</ol>
+<p>Content Provider 提供了一种方便和安全的方式来共享和访问数据，它在 Android 应用程序之间起到了数据交换和共享的桥梁作用。通过 Content Provider，应用程序可以将自身的数据开放给其他应用程序使用，实现了数据的互通性和复用性。</p>
+<h4 id="存储方法："><a href="#存储方法：" class="headerlink" title="存储方法："></a>存储方法：</h4><p>在 Android 中，有多种方法可以用于存储数据。以下是一些常见的存储方法：</p>
+<ol>
+<li><p><strong>Shared Preferences（共享首选项）</strong>：用于存储轻量级的键值对数据，适用于存储应用程序的配置信息、用户偏好设置等。它是基于 XML 文件存储的，可以通过 SharedPreferences API 进行读写操作。</p>
+<ul>
+<li>SharedPreferences 是一种用于存储轻量级的键值对数据的存储方法。</li>
+<li>使用 SharedPreferences API 可以方便地读写应用程序的配置信息、用户偏好设置等数据。</li>
+<li>SharedPreferences 存储的数据是基于 XML 文件的，数据会保存在应用程序的私有目录中。</li>
+<li>通过调用 <code>getSharedPreferences()</code> 方法获取 SharedPreferences 对象，然后可以使用 <code>putXXX()</code> 方法存储数据，使用 <code>getXXX()</code> 方法获取数据。</li>
+</ul>
+</li>
+<li><p><strong>文件存储（Internal Storage）</strong>：用于在应用程序的私有目录中存储文件。这些文件仅对应用程序本身可见，其他应用程序无法访问。可以使用 Context 的 <code>openFileOutput()</code> 和 <code>openFileInput()</code> 方法进行文件的写入和读取。</p>
+<ol>
+<li>两个类：FileInputStream、FileOutputStream</li>
+<li>写有覆盖写和追加写，追加写需要使用模式FileInputSteam(append)</li>
+</ol>
+</li>
+<li><p><strong>SQLite 数据库</strong>：适用于存储结构化数据，提供了一个关系型数据库的解决方案。SQLite 数据库是内置的，使用 SQL 语言进行数据的增删改查操作。</p>
+<ol>
+<li>SQLite 是 Android 平台内置的关系型数据库管理系统，适用于存储结构化数据。</li>
+<li>可以使用 SQLite 数据库来创建和管理数据库，并执行 SQL 语句进行数据的增删改查操作。</li>
+<li>SQLite 数据库存储的数据是持久化的，即数据会在应用程序关闭后依然保留。</li>
+<li>使用 SQLite 数据库需要创建一个继承自 SQLiteOpenHelper 的子类，实现数据库的创建和版本管理。</li>
+<li>可以使用 SQLiteDatabase 类提供的方法执行 SQL 语句，如 <code>execSQL()</code>、<code>insert()</code>、<code>update()</code>、<code>delete()</code> 和 <code>query()</code> 等。</li>
+</ol>
+</li>
+<li><p><strong>网络存储</strong></p>
+</li>
+<li><p><strong>SQLite创建数据库和表以及使用</strong></p>
+<ol>
+<li><p><strong>要使用 SQLiteOpenHelper 创建数据库和表，需要执行以下步骤：</strong></p>
+<ol>
+<li>创建一个<strong>继承自 SQLiteOpenHelper 的子类</strong>，例如 <code>MyDatabaseHelper</code>。</li>
+<li>在子类中<strong>重写</strong> <code>onCreate()</code> 方法和 <code>onUpgrade()</code> 方法。<ul>
+<li><code>onCreate()</code> 方法用于在数据库第一次创建时执行，可以在此方法中执行创建表的操作。</li>
+<li><code>onUpgrade()</code> 方法用于在数据库版本升级时执行，可以在此方法中执行升级表结构或删除表的操作。</li>
+</ul>
+</li>
+<li>在子类的<strong>构造函数</strong>中，通过<strong>调用父类的构造函数</strong>，并传入数据库名称和版本号来创建数据库。</li>
+<li>在 <code>onCreate()</code> 方法中，使用 <code>execSQL()</code> 方法执行 SQL 语句来创建表。</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(db: <span class="type">SQLiteDatabase</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> createTableQuery = <span class="string">&quot;CREATE TABLE my_table (id INTEGER PRIMARY KEY, name TEXT)&quot;</span></span><br><span class="line">    db.execSQL(createTableQuery)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果需要升级数据库，可以在 <code>onUpgrade()</code> 方法中执行相应的操作。</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">kotlin</span><br><span class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onUpgrade</span><span class="params">(db: <span class="type">SQLiteDatabase</span>, oldVersion: <span class="type">Int</span>, newVersion: <span class="type">Int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> dropTableQuery = <span class="string">&quot;DROP TABLE IF EXISTS my_table&quot;</span></span><br><span class="line">    db.execSQL(dropTableQuery)</span><br><span class="line">    onCreate(db)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在应用程序中，通过实例化 <code>MyDatabaseHelper</code> 类来获取数据库对象，并执行相应的操作。</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用 getWritableDatabase() 或 getReadableDatabase() 方法从数据库助手对象中获取 SQLiteDatabase 对象。</span></span><br><span class="line">   	<span class="comment">//getWritableDatabase() 方法返回一个可读写的 SQLiteDatabase 对象。</span></span><br><span class="line">    <span class="comment">//getReadableDatabase() 方法返回一个可读的 SQLiteDatabase 对象。</span></span><br><span class="line"><span class="keyword">val</span> dbHelper = MyDatabaseHelper(context)</span><br><span class="line"><span class="keyword">val</span> db = dbHelper.writableDatabase</span><br><span class="line"></span><br><span class="line"><span class="comment">// 执行数据库操作，如插入数据、查询数据等</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>2.SQLiteDatabase重要方法：</strong></p>
+<ol>
+<li><code>execSQL(String sql)</code>：执行给定的 SQL 语句，可以是创建表、插入数据、更新数据、删除数据等操作。不返回结果集。</li>
+<li><code>query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy)</code>：查询指定表中的数据，并返回一个 Cursor 对象，可以通过 Cursor 对象获取查询结果。</li>
+<li><code>insert(String table, String nullColumnHack, ContentValues values)</code>：向指定表中插入数据，返回插入数据的行 ID。</li>
+<li><code>update(String table, ContentValues values, String whereClause, String[] whereArgs)</code>：更新指定表中的数据，可以根据条件进行更新，返回受影响的行数。</li>
+<li><code>delete(String table, String whereClause, String[] whereArgs)</code>：删除指定表中的数据，可以根据条件进行删除，返回受影响的行数。</li>
+<li><code>beginTransaction()</code> 和 <code>endTransaction()</code>：用于开始和结束事务操作，可以确保一系列数据库操作的原子性。</li>
+<li><code>compileStatement(String sql)</code>：编译给定的 SQL 语句并返回一个预编译的 SQLiteStatement 对象，可以多次执行该语句。</li>
+<li><code>rawQuery(String sql, String[] selectionArgs)</code>：执行给定的 SQL 查询语句，返回一个 Cursor 对象。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="三、日志级别"><a href="#三、日志级别" class="headerlink" title="三、日志级别"></a>三、日志级别</h2><ol>
+<li>DEBUG：用于调试目的，输出详细的调试信息，通常只在开发和调试阶段使用。</li>
+<li>INFO：用于提供程序运行的一般信息，如应用程序启动、关键操作的开始和结束等。</li>
+<li>WARNING：用于警告可能存在的问题，这些问题可能会导致程序异常或错误的行为，但不会影响程序的继续运行。</li>
+<li>ERROR：用于表示错误发生，但不会导致程序终止。通常用于记录程序中的异常情况或错误的行为。</li>
+<li>FATAL：表示严重的错误，可能导致程序终止或无法继续运行的情况。</li>
+</ol>
+<p><strong>在 Android 开发中，常用的日志输出工具是 <code>android.util.Log</code> 类，它提供了方法来打印不同级别的日志信息，如 <code>Log.d()</code>、<code>Log.i()</code>、<code>Log.w()</code>、<code>Log.e()</code> 等。</strong></p>
+<h2 id="四、MediaPlayer用法"><a href="#四、MediaPlayer用法" class="headerlink" title="四、MediaPlayer用法"></a>四、MediaPlayer用法</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> android.media.MediaPlayer</span><br><span class="line"><span class="keyword">import</span> android.net.Uri</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle</span><br><span class="line"><span class="keyword">import</span> android.support.v7.app.AppCompatActivity</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MainActivity</span> : <span class="type">AppCompatActivity</span>() &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">var</span> mediaPlayer: MediaPlayer? = <span class="literal">null</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState)</span><br><span class="line">        setContentView(R.layout.activity_main)</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建 MediaPlayer 对象</span></span><br><span class="line">        mediaPlayer = MediaPlayer()</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置数据源</span></span><br><span class="line">        <span class="keyword">val</span> path = <span class="string">&quot;path/to/audio.mp3&quot;</span></span><br><span class="line">        mediaPlayer?.setDataSource(path)</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 准备播放</span></span><br><span class="line">        mediaPlayer?.prepareAsync()</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置准备完成监听器</span></span><br><span class="line">        mediaPlayer?.setOnPreparedListener &#123; mp -&gt;</span><br><span class="line">            <span class="comment">// 开始播放</span></span><br><span class="line">            mediaPlayer?.start()</span><br><span class="line">            <span class="comment">// 暂停播放</span></span><br><span class="line">            mediaPlayer.pause()</span><br><span class="line">            <span class="comment">// 停止播放</span></span><br><span class="line">            mediaPlayer.stop()</span><br><span class="line">		   mediaPlayer.reset() <span class="comment">// 可选，重置 MediaPlayer 以便重新设置数据源和状态</span></span><br><span class="line">            <span class="comment">//设置循环播放</span></span><br><span class="line">            mediaPlayer.isLooping = <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 监听播放完成事件</span></span><br><span class="line">        mediaPlayer?.setOnCompletionListener &#123;</span><br><span class="line">            <span class="comment">// 在此处处理播放完成后的逻辑</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onDestroy</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.onDestroy()</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 释放资源</span></span><br><span class="line">        mediaPlayer?.release()</span><br><span class="line">        mediaPlayer = <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="五、菜单的分类"><a href="#五、菜单的分类" class="headerlink" title="五、菜单的分类"></a>五、菜单的分类</h2><p>在Android应用程序中，菜单可以分为以下几种分类：</p>
+<h3 id="选项菜单（Options-Menu）："><a href="#选项菜单（Options-Menu）：" class="headerlink" title="选项菜单（Options Menu）："></a>选项菜单（Options Menu）：</h3><ol>
+<li>也称为应用程序菜单，位于应用程序的顶部工具栏（ActionBar）中。选项菜单通常用于提供应用程序的操作选项，例如设置、搜索、刷新等。它可以通过调用 <code>onCreateOptionsMenu()</code> 方法创建，并通过 <code>onOptionsItemSelected()</code> 方法处理菜单项的点击事件。</li>
+</ol>
+<h3 id="上下文菜单（Context-Menu）："><a href="#上下文菜单（Context-Menu）：" class="headerlink" title="上下文菜单（Context Menu）："></a>上下文菜单（Context Menu）：</h3><ol>
+<li>上下文菜单是与特定视图关联的菜单，例如列表项、图像或文本等。当用户长按或点击视图时，上下文菜单会出现，提供与所选视图相关的操作选项。上下文菜单可以通过调用 <code>registerForContextMenu()</code> 方法注册视图，并通过 <code>onCreateContextMenu()</code> 方法创建，并使用 <code>onContextItemSelected()</code> 方法处理菜单项的点击事件。</li>
+</ol>
+<h3 id="弹出菜单（Popup-Menu）："><a href="#弹出菜单（Popup-Menu）：" class="headerlink" title="弹出菜单（Popup Menu）："></a>弹出菜单（Popup Menu）：</h3><ol>
+<li>弹出菜单是一个与特定视图关联的可弹出菜单，通常在用户点击特定按钮或图标时显示。弹出菜单可以显示在视图的下方或任何适合的位置，用于提供相关的操作选项。弹出菜单可以通过调用 <code>PopupMenu</code> 类的构造函数创建，并使用 <code>setOnMenuItemClickListener()</code> 方法处理菜单项的点击事件。</li>
+</ol>
+<h2 id="六、URLConnection发送网络请求"><a href="#六、URLConnection发送网络请求" class="headerlink" title="六、URLConnection发送网络请求"></a>六、URLConnection发送网络请求</h2><h3 id="简介：-2"><a href="#简介：-2" class="headerlink" title="简介："></a>简介：</h3><p>​    就是HttpURLConnection。</p>
+<h3 id="写数据和读数据的方法："><a href="#写数据和读数据的方法：" class="headerlink" title="写数据和读数据的方法："></a>写数据和读数据的方法：</h3><h4 id="写入数据（发送请求数据）："><a href="#写入数据（发送请求数据）：" class="headerlink" title="写入数据（发送请求数据）："></a><strong>写入数据</strong>（发送请求数据）：</h4><ul>
+<li>POST 请求：设置请求方法为 “POST”，打开输出流，将请求数据写入输出流。示例代码：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">HttpURLConnection</span> <span class="variable">connection</span> <span class="operator">=</span> (HttpURLConnection) url.openConnection();</span><br><span class="line">connection.setRequestMethod(<span class="string">&quot;POST&quot;</span>);</span><br><span class="line">connection.setDoOutput(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="type">String</span> <span class="variable">postData</span> <span class="operator">=</span> <span class="string">&quot;key1=value1&amp;key2=value2&quot;</span>;</span><br><span class="line"><span class="type">OutputStream</span> <span class="variable">outputStream</span> <span class="operator">=</span> connection.getOutputStream();</span><br><span class="line">outputStream.write(postData.getBytes());</span><br><span class="line">outputStream.flush();</span><br><span class="line">outputStream.close();</span><br></pre></td></tr></table></figure>
+
+<h4 id="读取数据（获取响应数据）："><a href="#读取数据（获取响应数据）：" class="headerlink" title="读取数据（获取响应数据）："></a><strong>读取数据</strong>（获取响应数据）：</h4><ul>
+<li>获取响应码：使用 <code>getResponseCode()</code> 方法获取响应码。示例代码：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">responseCode</span> <span class="operator">=</span> connection.getResponseCode();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>读取响应数据：通过获取输入流并读取数据，可以使用 <code>getInputStream()</code> 获取输入流，并使用 <code>BufferedReader</code> 读取数据。示例代码：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(connection.getInputStream()));</span><br><span class="line">String line;</span><br><span class="line"><span class="type">StringBuilder</span> <span class="variable">response</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> ((line = reader.readLine()) != <span class="literal">null</span>) &#123;</span><br><span class="line">    response.append(line);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">reader.close();</span><br><span class="line"><span class="type">String</span> <span class="variable">responseData</span> <span class="operator">=</span> response.toString();</span><br></pre></td></tr></table></figure>
+
+<h3 id="好用的工具：OKhttp"><a href="#好用的工具：OKhttp" class="headerlink" title="好用的工具：OKhttp"></a>好用的工具：OKhttp</h3><h3 id="权限的配置："><a href="#权限的配置：" class="headerlink" title="权限的配置："></a><strong>权限的配置</strong>：</h3><p>需要在 AndroidManifest.xml 文件中添加网络权限。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">&quot;android.permission.INTERNET&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="扩展知识（-AndroidManifest-xml）："><a href="#扩展知识（-AndroidManifest-xml）：" class="headerlink" title="扩展知识（ AndroidManifest.xml）："></a>扩展知识（ AndroidManifest.xml）：</h3><ol>
+<li><code>icon</code>：该属性用于指定应用程序的图标。在 AndroidManifest.xml 文件的 <code>&lt;application&gt;</code> 标签中，通过添加 <code>android:icon</code> 属性来指定应用程序的图标。示例：<code>android:icon=&quot;@drawable/app_icon&quot;</code>。</li>
+<li><code>label</code>：该属性用于指定应用程序的名称或标签。在 AndroidManifest.xml 文件的 <code>&lt;application&gt;</code> 标签中，通过添加 <code>android:label</code> 属性来指定应用程序的名称。示例：<code>android:label=&quot;@string/app_name&quot;</code>。</li>
+<li><code>theme</code>：该属性用于指定应用程序的主题或样式。在 AndroidManifest.xml 文件的 <code>&lt;application&gt;</code> 标签中，通过添加 <code>android:theme</code> 属性来指定应用程序的主题。示例：<code>android:theme=&quot;@style/AppTheme&quot;</code>。</li>
+</ol>
+<h2 id="七、Json数据的解析"><a href="#七、Json数据的解析" class="headerlink" title="七、Json数据的解析"></a>七、Json数据的解析</h2><p><strong>简介：当使用 Kotlin 解析 JSON 数据时，可以使用 Kotlin 标准库中的 <code>JSONObject</code> 和 <code>JSONArray</code> 类</strong></p>
+<p>解析object：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">parseJsonData</span><span class="params">(jsonData: <span class="type">String</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">val</span> jsonObject = JSONObject(jsonData)</span><br><span class="line">        <span class="keyword">val</span> name = jsonObject.getString(<span class="string">&quot;name&quot;</span>)</span><br><span class="line">        <span class="keyword">val</span> age = jsonObject.getInt(<span class="string">&quot;age&quot;</span>)</span><br><span class="line">        <span class="comment">// 使用解析得到的数据</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (e: JSONException) &#123;</span><br><span class="line">        e.printStackTrace()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>解析array</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">parseJsonArray</span><span class="params">(jsonArrayData: <span class="type">String</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">val</span> jsonArray = JSONArray(jsonArrayData)</span><br><span class="line">        <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">0</span> until jsonArray.length()) &#123;</span><br><span class="line">            <span class="keyword">val</span> item = jsonArray.getJSONObject(i)</span><br><span class="line">            <span class="keyword">val</span> name = item.getString(<span class="string">&quot;name&quot;</span>)</span><br><span class="line">            <span class="keyword">val</span> age = item.getInt(<span class="string">&quot;age&quot;</span>)</span><br><span class="line">            <span class="comment">// 使用解析得到的数据</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e: JSONException) &#123;</span><br><span class="line">        e.printStackTrace()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>ps：要是用解析，还得增加依赖</strong></p>
+<h2 id="八、线程通信机制"><a href="#八、线程通信机制" class="headerlink" title="八、线程通信机制"></a>八、线程通信机制</h2><p>Handler 和 Looper 是 Android 中用于实现线程间通信的关键组件。它们与消息队列（Message Queue）密切相关。</p>
+<ol>
+<li>消息队列（Message Queue）：消息队列是一个先进先出（FIFO）的数据结构，用于存储需要在特定线程中处理的消息（Message）。每个线程都有一个关联的消息队列，用于存储待处理的消息。</li>
+<li>Looper：Looper 是一个线程本地的消息循环器，通过循环从消息队列中取出消息，并将其分发给相应的 Handler 进行处理。每个线程只能有一个 Looper，并且只能在 Looper 所在的线程中调用 Looper 的相关方法。</li>
+<li>Handler：Handler 是与特定 Looper 关联的对象，用于发送和处理消息。它可以将消息发送到消息队列中，也可以从消息队列中取出消息并进行处理。Handler 可以关联到特定的线程，并在该线程的消息循环中进行操作。</li>
+</ol>
+<p>消息发送和接收处理的方法包括：</p>
+<ul>
+<li>发送消息：可以使用 Handler 的 <code>sendMessage()</code> 或 <code>post()</code> 方法发送消息到消息队列中。例如，<code>handler.sendMessage(message)</code> 或 <code>handler.post(runnable)</code>。</li>
+<li>处理消息：Handler 可以重写 <code>handleMessage()</code> 方法来处理接收到的消息。当消息到达消息队列并被取出时，将调用 Handler 的 <code>handleMessage()</code> 方法来处理该消息。</li>
+</ul>
+<h2 id="九、针对Handler的封装AsyncTask（异步）"><a href="#九、针对Handler的封装AsyncTask（异步）" class="headerlink" title="九、针对Handler的封装AsyncTask（异步）"></a>九、针对Handler的封装AsyncTask（异步）</h2><p>在 Android 中，AsyncTask 是一个封装了 Handler 和线程池的工具类，用于在后台线程执行异步任务并在主线程更新 UI。它提供了一种简化异步操作的方式，避免了手动管理线程和处理线程间通信的复杂性。</p>
+<h3 id="1-AsyncTask-的使用步骤如下："><a href="#1-AsyncTask-的使用步骤如下：" class="headerlink" title="1.AsyncTask 的使用步骤如下："></a>1.AsyncTask 的使用步骤如下：</h3><ol>
+<li>创建一个继承自 AsyncTask 的子类，并指定三个泛型参数：<ul>
+<li><code>Params</code>：表示要传递给异步任务的参数类型。</li>
+<li><code>Progress</code>：表示异步任务执行过程中发布的进度类型。</li>
+<li><code>Result</code>：表示异步任务执行完成后返回的结果类型。</li>
+</ul>
+</li>
+<li>在子类中重写以下方法：<ul>
+<li><code>onPreExecute()</code>：在执行异步任务之前调用，用于进行一些初始化操作，例如显示进度条。</li>
+<li><code>doInBackground()</code>：在后台线程中执行耗时操作，该方法会在子线程中被调用。</li>
+<li><code>onPostExecute()</code>：在后台操作完成后调用，可以在该方法中更新 UI 或处理结果。</li>
+</ul>
+</li>
+</ol>
+<h2 id="十、HarmonyOS-Ability-FA、PA"><a href="#十、HarmonyOS-Ability-FA、PA" class="headerlink" title="十、HarmonyOS Ability: FA、PA"></a>十、HarmonyOS Ability: FA、PA</h2><p>在HarmonyOS中，Ability是一种能力模型，用于定义应用程序的功能单元。它是应用程序的组成部分，用于实现特定的功能或服务。在HarmonyOS中，有两种类型的Ability：FA（Form Ability）和PA（Page Ability）。</p>
+<ol>
+<li>FA（Form Ability）：FA是一种面向用户的能力，用于展示应用程序的主要界面。它可以作为一个独立的应用启动，也可以作为其他Ability的容器。每个FA都有自己的生命周期和界面，可以包含多个PA。FA通常用于展示应用的主要界面，例如应用的主屏幕、主菜单等。</li>
+<li>PA（Page Ability）：PA是一种被包含在FA中的能力，用于展示应用程序的次要界面。一个FA可以包含多个PA，通过在FA中切换不同的PA来展示不同的界面内容。PA通常用于展示应用的具体功能页面，例如设置页面、详情页面等。</li>
+</ol>
+<p>FA和PA之间的切换可以通过AbilitySliceManager来实现，通过调用相关的方法来启动和切换Ability。每个Ability都有自己的生命周期方法，可以在这些方法中处理具体的逻辑和交互操作。</p>
+<h2 id="题型："><a href="#题型：" class="headerlink" title="题型："></a>题型：</h2><p><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/image-20230614232058292.png" alt="image-20230614232058292"></p>
+<h2 id="测验："><a href="#测验：" class="headerlink" title="测验："></a>测验：</h2><h2 id="一-填空题（共45-题，52-0分）"><a href="#一-填空题（共45-题，52-0分）" class="headerlink" title="*一. 填空题（共45 题，52.0分）*"></a><em><strong>*一. 填空题（共45 题，52.0分）*</strong></em></h2><p><em><strong>*1. (填空题,1.0分)kotlin语言中用___________代表常量，用___________代表变量。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) val</p>
+<p>(2) var</p>
+<p>正确答案：</p>
+<p>(1) val;const val</p>
+<p>(2) var</p>
+<p><em><strong>*2. (填空题,0.5分)在kotlin语言中，有与java中的switch关键字具有类似功能的关键字是___________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) when</p>
+<p>正确答案：</p>
+<p>(1) when</p>
+<p><em><strong>*3. (填空题,4.0分)在 kotlin中，如下数据类型分别占用多少个字节（填写数 字）：Byte：_______，Short:<em><strong><strong>_<em>，Int：_______，Long:<em><strong><strong>_<em>，Float:<em><strong><strong><strong>，Double:</strong></strong></strong></em>,Char:</em>_</strong></strong></em>,Boolean:</em>_</strong></strong></em>*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) 1</p>
+<p>(2) 2</p>
+<p>(3) 4</p>
+<p>(4) 8</p>
+<p>(5) 4</p>
+<p>(6) 8</p>
+<p>(7) 2</p>
+<p>(8) 1</p>
+<p>正确答案：</p>
+<p>(1) 1</p>
+<p>(2) 2</p>
+<p>(3) 4</p>
+<p>(4) 8</p>
+<p>(5) 4</p>
+<p>(6) 8</p>
+<p>(7) 2</p>
+<p>(8) 1</p>
+ <p style="color:red">***\*4. (填空题,0.5分)在kotlin中，安全操作符（调用符）是_________\**** </p>
+
+<p>我的答案： </p>
+<p>(1) ?</p>
+<p>正确答案：</p>
+<p>(1) ?.</p>
+<p style="color:red; font-weight: bold;">*5. (填空题,0.5分)在kotlin中，非安全操作符（调用符）是_________* </p>
+
+<p>我的答案： </p>
+<p>(1) !</p>
+<p>正确答案：</p>
+<p>(1) !!</p>
+<p><em><strong>*6. (填空题,1.0分)kotlin 程序的主入口是________________________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) main()</p>
+<p>正确答案：</p>
+<p>(1) fun main();main;main()</p>
+<p><em><strong>*7. (填空题,0.5分)kotlin中，类的各个属性对应的幕后字段是_______________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>正确答案：</p>
+<p>(1) field</p>
+<p><em><strong>*8. (填空题,0.5分)在kotlin中，表达类的继承关系用符号______________*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) :</p>
+<p>正确答案：</p>
+<p>(1) :</p>
+<p><em><strong>*9. (填空题,0.5分)在kotlin中，var a:Any?=null， var b=a?:0，则b的值是_____。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) 0</p>
+<p>正确答案：</p>
+<p>(1) 0</p>
+<p><em><strong>*10. (填空题,0.5分)kotlin中，有一个__________类与java bean类相似，主要用于数据处理。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) data</p>
+<p>正确答案：</p>
+<p>(1) 数据;数据类;data;data class</p>
+<p style="color:red; font-weight: bold;">*11. (填空题,1.0分)kotlin中的___________类与java的静态内部类相似，_____________类与java的成员内部类相似。* </p>
+
+<p>我的答案： </p>
+<p>(1) 内部类</p>
+<p>(2) 嵌套类</p>
+<p>正确答案：</p>
+<p>(1) 嵌套;嵌套类</p>
+<p>(2) 内部;内部类;inner;inner class</p>
+<p><em><strong>*12. (填空题,1.2分)Activity 的主要生命周期方法: <strong><strong><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></strong></strong>,<em><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></strong></strong>,</strong></em>_________________,_____________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) onCreate</p>
+<p>(2) onStart</p>
+<p>(3) onResume</p>
+<p>(4) onPause</p>
+<p>(5) onStop</p>
+<p>(6) onDestroy</p>
+<p>正确答案：</p>
+<p>(1) onCreate;oncreate;onCreate();onCreate();</p>
+<p>(2) onStart;onstart;onStart();onStart();</p>
+<p>(3) onResume;onresume;onResume();onResume();</p>
+<p>(4) onPause;onpause;onPause();onPause();</p>
+<p>(5) onStop;onstop;onStop();onStop();</p>
+<p>(6) onDestroy;ondestroy;onDestroy();onDestroy();</p>
+<p style="color:red; font-weight: bold;">*13. (填空题,0.5分)Activity被其他界面完全遮住了，将要执行方法:____________________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) onStop</p>
+<p>正确答案：</p>
+<p>(1) onPause;onpause;onPause()</p>
+<p style="color:red; font-weight: bold;">*14. (填空题,1.0分)当按下系统Home键的时候，Activity通常会执行哪些方法:______________________,___________________________.* </p>
+
+<p>我的答案： </p>
+<p>(1) onStop</p>
+<p>(2) onDestroy</p>
+<p>正确答案：</p>
+<p>(1) onPause;onpause</p>
+<p>(2) onStop;onstop</p>
+<p style="color:red; font-weight: bold;">*15. (填空题,1.5分)当按下系统返回键的时候，Activity通常会执行哪些方法：________________________,_____________________________,__________________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) onStop</p>
+<p>(2) onDestroy</p>
+<p>(3) onStart</p>
+<p>正确答案：</p>
+<p>(1) onPause;onpause;onPause()</p>
+<p>(2) onStop;onstop;onStop()</p>
+<p>(3) onDestroy;ondestroy;onDestroy()</p>
+<p><em><strong>*16. (填空题,3.0分)请 写出常用的几种布局方式（写英文名字或者中文名字即 可）:<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong><strong><strong>,</strong>_____<em><strong><strong><strong><strong><strong><strong><strong><strong><strong>,<em><em><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>，</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></em>,</em></strong></strong></strong></strong></strong></strong></strong></strong></strong></em></strong>.*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) 约束布局</p>
+<p>(2) 相对布局</p>
+<p>(3) 表格布局</p>
+<p>(4) 网格布局</p>
+<p>(5) 帧布局</p>
+<p>(6) 线性布局</p>
+<p>正确答案：</p>
+<p>(1) 约束布局;ConstraintLayout;约束布局(ConstraintLayout);约束布局ConstraintLayout</p>
+<p>(2) 相对布局;RelativeLayout;相对布局(RelativeLayout);相对布局RelativeLayout</p>
+<p>(3) 线性布局;LinearLayout;线性布局(LinearLayout);线性布局LinearLayout</p>
+<p>(4) 帧布局;FrameLayout;帧布局(FrameLayout);帧布局FrameLayout</p>
+<p>(5) 表格布局;TableLayout;表格布局(TableLayout);表格布局TableLayout</p>
+<p>(6) 网格布局;GridLayout;网格布局(GridLayout);网格布局GridLayout</p>
+<p><em><strong>*17. (填空题,0.5分)SharedPreferences存储的文件格式是_______________。*</strong></em></p>
+<p>我的答案： </p>
+<p>(1) xml</p>
+<p>正确答案：</p>
+<p>(1) xml;.xml</p>
+<p><em><strong>*18. (填空题,1.0分)Android的文件存储涉及IO流操作对象，主要有(写出英文名字即可)_<em><strong><strong><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></strong></strong></em>.*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) FileInputStream</p>
+<p>(2) FileOutputStream</p>
+<p>正确答案：</p>
+<p>(1) FileInputStream</p>
+<p>(2) FileOutputStream</p>
+<p style="color:red; font-weight: bold;">*19. (填空题,1.0分)Android数据库操作通常需要使用一个Helper类，名字是________________*</p>
+
+<p>我的答案： </p>
+<p>(1) SQLiteHelperOpen</p>
+<p>正确答案：</p>
+<p>(1) SQLiteOpenHelper</p>
+<p><em><strong>*20. (填空题,1.0分)Android系统中分享应用数据的组件是（写出英文名字）:__________________*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) content provider</p>
+<p>正确答案：</p>
+<p>(1) ContentProvider</p>
+<p style="color:red; font-weight: bold;">*21. (填空题,0.5分)Android系统中用于组件间通信的组件是（写出英文名字）:______________________* </p>
+
+<p>我的答案： </p>
+<p>(1) Intent</p>
+<p>正确答案：</p>
+<p>(1) BroadcastReceiver</p>
+<p style="color:red; font-weight: bold;">*22. (填空题,0.5分)Android URI使用的数据协议是：_______________________* </p>
+
+<p>我的答案： </p>
+<p>(1) Intent</p>
+<p>正确答案：</p>
+<p>(1) content;content:;content://</p>
+<p><em><strong>*23. (填空题,1.0分)Android启动式服务，使用的方法名是:____________________，绑定式服务使用的方法名是：__________________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) startService</p>
+<p>(2) bindService</p>
+<p>正确答案：</p>
+<p>(1) startService;startService()</p>
+<p>(2) bindService;bindService()</p>
+<p><em><strong>*24. (填空题,0.5分)Android用于线程间通信的工具是：_____________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) Handler</p>
+<p>正确答案：</p>
+<p>(1) Handler</p>
+<p><em><strong>*25. (填空题,0.5分)Android模拟器访问宿主机的lP地址是: _________________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) 10.0.2.2</p>
+<p>正确答案：</p>
+<p>(1) 10.0.2.2</p>
+<p style="color:red; font-weight: bold;">*26. (填空题,1.0分)Android Socket开发，用于定义客户端的socket工具名字是：_________________，服务端socker工具名字是：_______________________。*</p>
+
+<p>我的答案： </p>
+<p>(1) socket</p>
+<p>(2) socketServer</p>
+<p>正确答案：</p>
+<p>(1) Socket;java.net.Socket</p>
+<p>(2) ServerSocket;java.net.ServerSocket</p>
+<p><em><strong>*27. (填空题,0.5分)Android解析Json的工具可以用：___________________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) Gson</p>
+<p>正确答案：</p>
+<p>(1) Gson;FastJson;moshi</p>
+<p><em><strong>*28. (填空题,2.0分)请写出Android的四大组件（英文名字）：__________________,<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>,_____________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) Activity</p>
+<p>(2) Service</p>
+<p>(3) content provider</p>
+<p>(4) BroadcastReceiver</p>
+<p>正确答案：</p>
+<p>(1) Activity</p>
+<p>(2) Service</p>
+<p>(3) ContentProvider</p>
+<p>(4) BroadcastReceiver</p>
+<p><em><strong>*29. (填空题,2.0分)Activity的四种启动模式分别是（写出英文名）:<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>,___________________,__________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) standard</p>
+<p>(2) singleTop</p>
+<p>(3) singleTask</p>
+<p>(4) singleInstance</p>
+<p>正确答案：</p>
+<p>(1) standard</p>
+<p>(2) singleTop</p>
+<p>(3) singleTask</p>
+<p>(4) singleInstance</p>
+<p><em><strong>*30. (填空题,1.0分)在线性布局中放置一个Button，如果想让这个按钮居中显示，需要设置的属性名是:______________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) layout_gravity</p>
+<p>正确答案：</p>
+<p>(1) android:layout_gravity;layout_gravity</p>
+<p><em><strong>*31. (填空题,6.0分)Fragment 的生命周期方法有（只写出名字即 可）__________________,<em><strong><strong><strong><strong><strong><strong><strong><strong><strong>，</strong></strong></strong></strong></strong></strong></strong></strong></strong></em><em><strong>,</strong></em><em><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></em><em><strong>,</strong></em><em><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></em><em><strong>,</strong></em><em><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong></em><em><strong>,</strong></em><strong><strong><strong><strong><strong><strong><strong>,</strong></strong></strong></strong></strong></strong></strong><strong><strong>,</strong></strong>______________,*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) onAttach</p>
+<p>(2) onCreate</p>
+<p>(3) onCreateView</p>
+<p>(4) onViewCreated</p>
+<p>(5) onActivityCreated</p>
+<p>(6) onStart</p>
+<p>(7) onResume</p>
+<p>(8) onPause</p>
+<p>(9) onStop</p>
+<p>(10) onDestroyView</p>
+<p>(11) onDestroy</p>
+<p>(12) onDetach</p>
+<p>正确答案：</p>
+<p>(1) onAttach;onAttach()</p>
+<p>(2) onCreate;onCreate()</p>
+<p>(3) onCreateView;onCreateView()</p>
+<p>(4) onViewCreated;onViewCreated()</p>
+<p>(5) onActivityCreated;onActivityCreated()</p>
+<p>(6) onStart;onStart()</p>
+<p>(7) onResume;onResume()</p>
+<p>(8) onPause;onPause()</p>
+<p>(9) onStop;onStop()</p>
+<p>(10) onDestroyView;onDestroyView()</p>
+<p>(11) onDestroy;onDestroy()</p>
+<p>(12) onDetach;onDetach()</p>
+<p><em><strong>*32. (填空题,1.0分)Android UI布局通常给控件的设置长度的单位用(写该单位的英文缩写名字)：__________，给文字设置大小的单位用（写该单位的英文缩写名字)）：_______。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) dp</p>
+<p>(2) sp</p>
+<p>正确答案：</p>
+<p>(1) dp;dip</p>
+<p>(2) sp</p>
+<p><em><strong>*33. (填空题,1.0分)checkBox是复选框，如果需要选中，则配置属性：______________________为true。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) isChecked</p>
+<p>正确答案：</p>
+<p>(1) isChecked</p>
+<p><em><strong>*34. (填空题,1.0分)线性布局是有方向的，其值包括（写出中文名字或者英文名字）:__________________,___________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) Horizontal</p>
+<p>(2) Vertical</p>
+<p>正确答案：</p>
+<p>(1) 水平;水平方向;horizontal</p>
+<p>(2) 竖直;竖直方向;垂直;垂直方向;vertical</p>
+<p style="color:red; font-weight: bold;">*35. (填空题,1.0分)Json表达对象用：________________，表达数组用: __________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) JSONObject</p>
+<p>(2) JSONArr</p>
+<p>正确答案：</p>
+<p>(1) JsonObject</p>
+<p>(2) JsonArray</p>
+<p style="color:red; font-weight: bold;">*36. (填空题,2.0分)Android数据存储的方式有:________________，___________________,______________________,__________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) 文件存储</p>
+<p>(2) SQLite</p>
+<p>(3) getSharedPerferences</p>
+<p>(4) </p>
+<p>正确答案：</p>
+<p>(1) 文件存储</p>
+<p>(2) SharedPreferences</p>
+<p>(3) sqlite</p>
+<p>(4) 网络存储</p>
+<p style="color:red; font-weight: bold;">*37. (填空题,2.0分)Android数据库sqliteOpenHelper中，实现数据库表创建的方法名是:__________________,实现数据库更新的方法名是：_______________________。*</p>
+
+<p>我的答案： </p>
+<p>(1) create</p>
+<p>(2) update</p>
+<p>正确答案：</p>
+<p>(1) onCreate</p>
+<p>(2) onUpgrade</p>
+<p style="color:red; font-weight: bold;">*38. (填空题,1.0分)Android数据库中执行增删改查的数据库对象db，它的类型是:____________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) object</p>
+<p>正确答案：</p>
+<p>(1) SQLiteDatabase</p>
+<p><em><strong>*39. (填空题,1.0分)Android中用于替代ListView的控件是(写出英文名字即可)：_______________________。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) RecyclerView</p>
+<p>正确答案：</p>
+<p>(1) RecyclerView</p>
+<p style="color:red; font-weight: bold;">*40. (填空题,1.0分)Sqlite用db插入数据的时候，通常要将数据封装在一个关系类中，其名字是:________________。*</p>
+
+<p>我的答案： </p>
+<p>正确答案：</p>
+<p>(1) ContentValues</p>
+<p>***41. (填空题,0.5分)Adapter适配器中用于渲染每个Item的方法名（仅写出名字即可）是：____________________。* **</p>
+<p>我的答案： </p>
+<p>(1) getView</p>
+<p>正确答案：</p>
+<p>(1) getView</p>
+<p style="color:red; font-weight: bold;">*42. (填空题,1.2分)Handler发送消息的方法名是：__________________,处理消息的方法名是：___________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) Message</p>
+<p>(2) handlerMessage</p>
+<p>正确答案：</p>
+<p>(1) sendMessage</p>
+<p>(2) handleMessage</p>
+<p><em><strong>*43. (填空题,1.0分)AsyncTask中，执行耗时任务需要在方法名为：_________________________的方法中执行，执行的结果将返回给方法名为:__________________的方法中处理。*</strong></em> </p>
+<p>我的答案： </p>
+<p>(1) doInBackground</p>
+<p>(2) onPostExecute</p>
+<p>正确答案：</p>
+<p>(1) doInBackground</p>
+<p>(2) onPostExecute</p>
+<p style="color:red; font-weight: bold;">*44. (填空题,0.6分)Android 界面的切片、碎片，英文名字是：_____________________。* </p>
+
+<p>我的答案： </p>
+<p>(1) </p>
+<p>正确答案：</p>
+<p>(1) Fragment</p>
+<p><em><strong>*45. (填空题,1.0分)Android应用的私有文件都存储在路径为:________________________的里面。*</strong></em> </p>
+<p>我的答案： </p>
+<p>正确答案：</p>
+<p>(1) /data/data/应用包名</p>
+<h2 id="二-判断题（共9-题，9-0分）"><a href="#二-判断题（共9-题，9-0分）" class="headerlink" title="*二. 判断题（共9 题，9.0分）*"></a><em><strong>*二. 判断题（共9 题，9.0分）*</strong></em></h2><p><em><strong>*46. (判断题,1.0分)kotlin中的for， when是表达式，具有返回值。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 错 正确答案: 错 </p>
+<p><em><strong>*47. (判断题,1.0分)lateinit通常用于var变量的延迟初始化。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 对 正确答案: 对 </p>
+<p><em><strong>*48. (判断题,1.0分)Android广播的注册方式有静态注册和动态注册两种方式。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 对 正确答案: 对 </p>
+<p><em><strong>*49. (判断题,1.0分)Snackbar与Toast类似，但它是可以交互的。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 对 正确答案: 对 </p>
+<p><em><strong>*50. (判断题,1.0分)Android广播可以在AndroidManifest.xml中静态注册，也可以用代码进行动态注册。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 对 正确答案: 对 </p>
+<p><em><strong>*51. (判断题,1.0分)Android只能发送普通广播，不能发送有序广播。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 错 正确答案: 错 </p>
+<p><em><strong>*52. (判断题,1.0分)AndroidManifest.xml中可以配置应用的权限，要用到<uses-permission>*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 对 正确答案: 对 </p>
+<p><em><strong>*53. (判断题,1.0分)Service默认是运行在UI线程上的，故不能直接执行耗时操作。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 对 正确答案: 对 </p>
+<p><em><strong>*54. (判断题,1.0分)Handler中的消息是封装为Message对象，用arg属性来标识消息的。*</strong></em> </p>
+<p>· A. 对</p>
+<p>· B. 错</p>
+<p>我的答案: 错 正确答案: 错 </p>
+<h2 id="三-单选题（共7-题，14-0分）"><a href="#三-单选题（共7-题，14-0分）" class="headerlink" title="*三. 单选题（共7 题，14.0分）*"></a><em><strong>*三. 单选题（共7 题，14.0分）*</strong></em></h2><p><em><strong>*55. (单选题,2.0分)Android系统架构分层，不包括下面哪个选项？*</strong></em> </p>
+<p>· A. Linux内核</p>
+<p>· B. Android Framework</p>
+<p>· C. 应用程序层</p>
+<p>· D. Kotlin服务</p>
+<p>我的答案:D 正确答案: D </p>
+<p><em><strong>*56. (单选题,2.0分)新添加的元素Id，其前缀用:____________*</strong></em> </p>
+<p>· A. @id</p>
+<p>· B. @+id</p>
+<p>· C. @android：id</p>
+<p>· D. @id+</p>
+<p>我的答案:B 正确答案: B </p>
+<p><em><strong>*57. (单选题,2.0分)Log输出警告级别的日志用：___________*</strong></em> </p>
+<p>· A. Log.d</p>
+<p>· B. Log.w</p>
+<p>· C. Log.i</p>
+<p>· D. Log.e</p>
+<p>我的答案:B 正确答案: B </p>
+<p><em><strong>*58. (单选题,2.0分)Android MediaPlayer开始播放用的方法是:_________*</strong></em> </p>
+<p>· A. resume</p>
+<p>· B. start</p>
+<p>· C. play</p>
+<p>· D. launch</p>
+<p>我的答案:B 正确答案: B </p>
+<p><em><strong>*59. (单选题,2.0分)常用的菜单不包括下面的哪项？*</strong></em> </p>
+<p>· A. OptionsMenu</p>
+<p>· B. ContextMenu</p>
+<p>· C. PopupMenu</p>
+<p>· D. prepareMenu</p>
+<p>我的答案:D 正确答案: D </p>
+<p><em><strong>*60. (单选题,2.0分)Service的生命周期方法中不包括下面的哪项？*</strong></em> </p>
+<p>· A. onCreate</p>
+<p>· B. onStop</p>
+<p>· C. onStartCommand</p>
+<p>· D. onDestroy</p>
+<p>我的答案:B 正确答案: B </p>
+<p><em><strong>*61. (单选题,2.0分)AndroidManifest.xml的application节中配置应用标题的属性是:_____________。*</strong></em> </p>
+<p>· A. android:icon</p>
+<p>· B. android:label</p>
+<p>· C. android:theme</p>
+<p>· D. android:name</p>
+<p>我的答案:B 正确答案: B </p>
+<h2 id="四-简答题（共2-题，10-0分）"><a href="#四-简答题（共2-题，10-0分）" class="headerlink" title="*四. 简答题（共2 题，10.0分）*"></a><em>*四. 简答题（共2 题，10.0分）*</em></h2><p style="color:red; font-weight: bold;" >*62. (简答题,5.0分)请简述下Handler线程通信机制*</p>
+
+<ol>
+<li>消息是封装到Message对象中</li>
+<li>Handler负责发送消息sendMessage和处理消息handleMessage</li>
+<li>Message对象存放到消息队列中即MessageQueue</li>
+<li>Looper负责消息的循环，从消息队列取消息交给对应的Handler来处理。</li>
+</ol>
+<p style="color:red; font-weight: bold; ">*63. (简答题,5.0分)请简述下Sqlite数据库增删改查的操作步骤*</p>
+
+<ol>
+<li>创建SqliteOpenHelper子类，覆写onCreate方法，实现数据库表的创建</li>
+<li>通过SqliteOpenHelper对象，调用getWritableDatabase方法获得db对象</li>
+<li>通过db相应的insert，delete，update，query方法来实现数据库的增删改查操作，同时过程中会涉及ContentValues数据对象，Cursor对象等。</li>
+<li>Cursor，db对象使用完毕要及时关闭close，防止内存泄漏。</li>
+</ol>
+<h2 id="五-编程题（共1-题，15-0分）"><a href="#五-编程题（共1-题，15-0分）" class="headerlink" title="*五. 编程题（共1 题，15.0分）*"></a><em><strong>*五. 编程题（共1 题，15.0分）*</strong></em></h2><p style="color:red;font-weight: bold;">*64. (编程题,15.0分)请根据要求写出代码：界面上放置两个button和一个文本输入框，其中一个按钮的功能是将文本输入框的内容保存到本地SharedPrefence中，另外一个按钮是清除SharedPrefence中的数据。*</p>
+
+<p>//示例仅供参考</p>
+<p>package com.example.test</p>
+<p>import android.content.Context<br>import androidx.appcompat.app.AppCompatActivity<br>import android.os.Bundle<br>import android.widget.Button<br>import android.widget.EditText</p>
+<p>class ExamActivity : AppCompatActivity() {<br>  private lateinit var btSave:Button<br>  private lateinit var btClear:Button<br>  private lateinit var tvContent:EditText<br>  override fun onCreate(savedInstanceState: Bundle?) {<br>    super.onCreate(savedInstanceState)<br>    setContentView(R.layout.activity_exam_activiy)<br>    btSave=findViewById(R.id.bt_save)<br>    btClear=findViewById(R.id.bt_clear)<br>    tvContent=findViewById(R.id.tv_content)<br>    val sharedPrefence=getSharedPreferences(“ContentData”,Context.MODE_PRIVATE)<br>    btSave.setOnClickListener {<br>      val content=tvContent.text.trim().toString()<br>      val editor=sharedPrefence.edit()<br>      editor.putString(“content”,content)<br>      editor.commit()<br>    }<br>    btClear.setOnClickListener {<br>      val editor=sharedPrefence.edit()<br>      editor.clear()<br>      editor.commit()<br>    }<br>  }<br>}</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.baiyeblog.top">LHT</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.baiyeblog.top/2023/061437686.html">https://www.baiyeblog.top/2023/061437686.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.baiyeblog.top" target="_blank">白与夜</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/20220925011639.png" target="_blank"><img class="post-qr-code-img" src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/20220925011639.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/061550297.html"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">软件测试-总复习</div></div></a></div><div class="next-post pull-right"><a href="/2023/061436199.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">面向对象-总复习</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">LHT</div><div class="author-info__description">小白的学习日志</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LHT-Stan/LHT-Stan.github.io/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/LHT-Stan" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2194619986&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:lihongting_email@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客，本人学术不精。如果阅读过程中遇到了问题，请及时评论或者留言，看到了会在第一时间给出回复。</div></div><!--!=partial('includes/widget/card_top_self', {}, {cache: true})--><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81kotlin%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">一、kotlin语法基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">变量常量的定义：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">基本数据类型：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E5%9E%8B%E5%85%AB%E7%A7%8D%EF%BC%88%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E3%80%81%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B1%BB%E5%9E%8B%E3%80%81%E5%AD%97%E7%AC%A6%E7%B1%BB%E5%9E%8B%E3%80%81%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%EF%BC%89%EF%BC%9A"><span class="toc-number">1.2.1.</span> <span class="toc-text">四型八种（整数类型、浮点数类型、字符类型、布尔类型）：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">对象：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%A9%BA%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="toc-number">1.4.</span> <span class="toc-text">可空类型：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.4.1.</span> <span class="toc-text">定义方式：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%EF%BC%9A"><span class="toc-number">1.5.</span> <span class="toc-text">数组：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8F%AF%E5%8F%98%E6%95%B0%E7%BB%84%EF%BC%9A"><span class="toc-number">1.5.1.</span> <span class="toc-text">1.可变数组：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%95%B0%E7%BB%84%EF%BC%9A"><span class="toc-number">1.5.2.</span> <span class="toc-text">2.不可变数组：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unit-%EF%BC%9A"><span class="toc-number">1.6.</span> <span class="toc-text">Unit ：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%EF%BC%9A"><span class="toc-number">1.7.</span> <span class="toc-text">条件判断：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-if-%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.7.1.</span> <span class="toc-text">1.if 表达式：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-when-%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.7.2.</span> <span class="toc-text">2.when 表达式：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%EF%BC%9A"><span class="toc-number">1.8.</span> <span class="toc-text">循环：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-for-%E5%BE%AA%E7%8E%AF%EF%BC%9A"><span class="toc-number">1.8.1.</span> <span class="toc-text">1.for 循环：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-while-%E5%BE%AA%E7%8E%AF%EF%BC%9A"><span class="toc-number">1.8.2.</span> <span class="toc-text">2.while 循环：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%B3%E5%87%BA%E5%BE%AA%E7%8E%AF%EF%BC%9A"><span class="toc-number">1.8.3.</span> <span class="toc-text">跳出循环：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Elvis%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.9.</span> <span class="toc-text">Elvis运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E7%AC%A6"><span class="toc-number">1.10.</span> <span class="toc-text">判断符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">1.11.</span> <span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%EF%BC%9A"><span class="toc-number">1.11.1.</span> <span class="toc-text">1.类的定义：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%EF%BC%9A"><span class="toc-number">1.11.2.</span> <span class="toc-text">2.对象的创建：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-number">1.11.3.</span> <span class="toc-text">3.构造函数：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%BB%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-number">1.11.3.1.</span> <span class="toc-text">主构造函数：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AC%A1%E7%BA%A7%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.11.3.2.</span> <span class="toc-text">次级构造函数</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E7%BB%A7%E6%89%BF%EF%BC%9A"><span class="toc-number">1.11.4.</span> <span class="toc-text">4.继承：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E5%8F%AF%E8%A7%81%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6%EF%BC%9A"><span class="toc-number">1.11.5.</span> <span class="toc-text">5.可见性修饰符：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E6%95%B0%E6%8D%AE%E7%B1%BB%EF%BC%9A"><span class="toc-number">1.11.6.</span> <span class="toc-text">6.数据类：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E5%86%85%E9%83%A8%E7%B1%BB%EF%BC%88Inner-Class%EF%BC%89"><span class="toc-number">1.11.7.</span> <span class="toc-text">7.内部类（Inner Class）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E5%B5%8C%E5%A5%97%E7%B1%BB%EF%BC%88Nested-Class%EF%BC%89%EF%BC%9A"><span class="toc-number">1.11.8.</span> <span class="toc-text">8.嵌套类（Nested Class）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-%E5%B1%80%E9%83%A8%E5%86%85%E9%83%A8%E7%B1%BB%EF%BC%88Local-Inner-Class%EF%BC%89%EF%BC%9A"><span class="toc-number">1.11.9.</span> <span class="toc-text">9.局部内部类（Local Inner Class）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB%EF%BC%88Anonymous-Inner-Class%EF%BC%89%EF%BC%9A"><span class="toc-number">1.11.10.</span> <span class="toc-text">10.匿名内部类（Anonymous Inner Class）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-%E5%AF%86%E5%B0%81%E7%B1%BB%EF%BC%88Sealed-Class%EF%BC%89%EF%BC%9A"><span class="toc-number">1.11.11.</span> <span class="toc-text">11.密封类（Sealed Class）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-%E6%8A%BD%E8%B1%A1%E7%B1%BB%EF%BC%88Abstract-Class%EF%BC%89%EF%BC%9A"><span class="toc-number">1.11.12.</span> <span class="toc-text">12.抽象类（Abstract Class）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-%E5%B1%9E%E6%80%A7%E7%9A%84set%E3%80%81get%E6%96%B9%E6%B3%95"><span class="toc-number">1.11.13.</span> <span class="toc-text">13.属性的set、get方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link"><span class="toc-number">1.11.13.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-number">1.12.</span> <span class="toc-text">函数：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-number">1.12.0.1.</span> <span class="toc-text">定义函数：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">1.12.0.2.</span> <span class="toc-text">默认参数：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">1.12.0.3.</span> <span class="toc-text">可变参数：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-number">1.12.0.4.</span> <span class="toc-text">高阶函数:</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%EF%BC%88Function-Types%EF%BC%89%EF%BC%9A"><span class="toc-number">1.12.0.4.1.</span> <span class="toc-text">1.函数类型（Function Types）：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-number">1.12.0.4.2.</span> <span class="toc-text">2.函数作为参数：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E8%BF%94%E5%9B%9E%E5%80%BC%EF%BC%9A"><span class="toc-number">1.12.0.4.3.</span> <span class="toc-text">3.函数作为返回值：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-Lambda-%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.12.0.4.4.</span> <span class="toc-text">4.Lambda 表达式：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AE%B9%E5%99%A8"><span class="toc-number">1.13.</span> <span class="toc-text">数据容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object%EF%BC%9A"><span class="toc-number">1.14.</span> <span class="toc-text">Object：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%90%AB%E4%B9%89%EF%BC%9A"><span class="toc-number">1.14.1.</span> <span class="toc-text">三种含义：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Android%E5%9F%BA%E7%A1%80"><span class="toc-number">2.</span> <span class="toc-text">二、Android基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">系统框架：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%EF%BC%9A"><span class="toc-number">2.2.</span> <span class="toc-text">四大组件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81Activity%EF%BC%88%E6%B4%BB%E5%8A%A8%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">1、Activity（活动）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%9B%9B%E5%A4%A7%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.3.1.</span> <span class="toc-text">1.四大启动模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">2.3.2.</span> <span class="toc-text">2.生命周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%90%AF%E5%8A%A8%E4%B8%8E%E8%B7%B3%E8%BD%AC"><span class="toc-number">2.3.3.</span> <span class="toc-text">3.启动与跳转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-UI%E5%B8%83%E5%B1%80"><span class="toc-number">2.3.4.</span> <span class="toc-text">4.UI布局</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Fragment%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%9A"><span class="toc-number">2.3.4.1.</span> <span class="toc-text">Fragment生命周期：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E5%B8%83%E5%B1%80%EF%BC%9A"><span class="toc-number">2.3.4.2.</span> <span class="toc-text">默认布局：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%EF%BC%9A"><span class="toc-number">2.3.4.3.</span> <span class="toc-text">常用属性：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">2.3.4.4.</span> <span class="toc-text">常用方法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%B0%BA%E5%AF%B8%E5%8D%95%E4%BD%8D%EF%BC%9A"><span class="toc-number">2.3.4.5.</span> <span class="toc-text">常用尺寸单位：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%8E%A7%E4%BB%B6%EF%BC%9A"><span class="toc-number">2.3.4.6.</span> <span class="toc-text">常用控件：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%88%97%E8%A1%A8%E6%8E%A7%E4%BB%B6%EF%BC%9A"><span class="toc-number">2.3.4.7.</span> <span class="toc-text">一些列表控件：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81Service%EF%BC%88%E6%9C%8D%E5%8A%A1%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">2、Service（服务）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B%EF%BC%9A"><span class="toc-number">2.5.</span> <span class="toc-text">简介：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%90%AF%E5%8A%A8%E5%BC%8F%E6%9C%8D%E5%8A%A1%EF%BC%88start%E6%98%AF%E5%90%AF%E5%8A%A8%E5%BC%8F%EF%BC%89"><span class="toc-number">2.6.</span> <span class="toc-text">1.启动式服务（start是启动式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%BB%91%E5%AE%9A%E5%BC%8F%E6%9C%8D%E5%8A%A1%EF%BC%88bind%E6%98%AF%E7%BB%91%E5%AE%9A%E5%BC%8F%EF%BC%89"><span class="toc-number">2.7.</span> <span class="toc-text">2.绑定式服务（bind是绑定式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">2.8.</span> <span class="toc-text">区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%9C%8D%E5%8A%A1%EF%BC%9A"><span class="toc-number">2.9.</span> <span class="toc-text">创建服务：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%90%AF%E5%8A%A8%E5%BC%8F%E6%9C%8D%E5%8A%A1%EF%BC%88Started-Service%EF%BC%89%E7%9A%84%E5%88%9B%E5%BB%BA%EF%BC%9A"><span class="toc-number">2.9.1.</span> <span class="toc-text">1.启动式服务（Started Service）的创建：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%BB%91%E5%AE%9A%E5%BC%8F%E6%9C%8D%E5%8A%A1%EF%BC%88Bound-Service%EF%BC%89%E7%9A%84%E5%88%9B%E5%BB%BA%EF%BC%9A"><span class="toc-number">2.9.2.</span> <span class="toc-text">2.绑定式服务（Bound Service）的创建：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81BroadcastReceiver%EF%BC%88%E5%B9%BF%E6%92%AD%EF%BC%89"><span class="toc-number">2.10.</span> <span class="toc-text">3、BroadcastReceiver（广播）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81Content-Provider%EF%BC%88%E6%95%B0%E6%8D%AE%E5%88%86%E4%BA%AB%EF%BC%89"><span class="toc-number">2.11.</span> <span class="toc-text">4、Content Provider（数据分享）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B%EF%BC%9A-1"><span class="toc-number">2.11.1.</span> <span class="toc-text">简介：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">2.11.2.</span> <span class="toc-text">存储方法：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%97%A5%E5%BF%97%E7%BA%A7%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">三、日志级别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81MediaPlayer%E7%94%A8%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text">四、MediaPlayer用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%8F%9C%E5%8D%95%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">5.</span> <span class="toc-text">五、菜单的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E9%A1%B9%E8%8F%9C%E5%8D%95%EF%BC%88Options-Menu%EF%BC%89%EF%BC%9A"><span class="toc-number">5.1.</span> <span class="toc-text">选项菜单（Options Menu）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E4%B8%8B%E6%96%87%E8%8F%9C%E5%8D%95%EF%BC%88Context-Menu%EF%BC%89%EF%BC%9A"><span class="toc-number">5.2.</span> <span class="toc-text">上下文菜单（Context Menu）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B9%E5%87%BA%E8%8F%9C%E5%8D%95%EF%BC%88Popup-Menu%EF%BC%89%EF%BC%9A"><span class="toc-number">5.3.</span> <span class="toc-text">弹出菜单（Popup Menu）：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81URLConnection%E5%8F%91%E9%80%81%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82"><span class="toc-number">6.</span> <span class="toc-text">六、URLConnection发送网络请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B%EF%BC%9A-2"><span class="toc-number">6.1.</span> <span class="toc-text">简介：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E6%95%B0%E6%8D%AE%E5%92%8C%E8%AF%BB%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">6.2.</span> <span class="toc-text">写数据和读数据的方法：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%99%E5%85%A5%E6%95%B0%E6%8D%AE%EF%BC%88%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%EF%BC%89%EF%BC%9A"><span class="toc-number">6.2.1.</span> <span class="toc-text">写入数据（发送请求数据）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%EF%BC%88%E8%8E%B7%E5%8F%96%E5%93%8D%E5%BA%94%E6%95%B0%E6%8D%AE%EF%BC%89%EF%BC%9A"><span class="toc-number">6.2.2.</span> <span class="toc-text">读取数据（获取响应数据）：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%EF%BC%9AOKhttp"><span class="toc-number">6.3.</span> <span class="toc-text">好用的工具：OKhttp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E7%9A%84%E9%85%8D%E7%BD%AE%EF%BC%9A"><span class="toc-number">6.4.</span> <span class="toc-text">权限的配置：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E5%B1%95%E7%9F%A5%E8%AF%86%EF%BC%88-AndroidManifest-xml%EF%BC%89%EF%BC%9A"><span class="toc-number">6.5.</span> <span class="toc-text">扩展知识（ AndroidManifest.xml）：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81Json%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A7%A3%E6%9E%90"><span class="toc-number">7.</span> <span class="toc-text">七、Json数据的解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6"><span class="toc-number">8.</span> <span class="toc-text">八、线程通信机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E9%92%88%E5%AF%B9Handler%E7%9A%84%E5%B0%81%E8%A3%85AsyncTask%EF%BC%88%E5%BC%82%E6%AD%A5%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">九、针对Handler的封装AsyncTask（异步）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-AsyncTask-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="toc-number">9.1.</span> <span class="toc-text">1.AsyncTask 的使用步骤如下：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E3%80%81HarmonyOS-Ability-FA%E3%80%81PA"><span class="toc-number">10.</span> <span class="toc-text">十、HarmonyOS Ability: FA、PA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E5%9E%8B%EF%BC%9A"><span class="toc-number">11.</span> <span class="toc-text">题型：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E9%AA%8C%EF%BC%9A"><span class="toc-number">12.</span> <span class="toc-text">测验：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%A1%AB%E7%A9%BA%E9%A2%98%EF%BC%88%E5%85%B145-%E9%A2%98%EF%BC%8C52-0%E5%88%86%EF%BC%89"><span class="toc-number">13.</span> <span class="toc-text">*一. 填空题（共45 题，52.0分）*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%88%A4%E6%96%AD%E9%A2%98%EF%BC%88%E5%85%B19-%E9%A2%98%EF%BC%8C9-0%E5%88%86%EF%BC%89"><span class="toc-number">14.</span> <span class="toc-text">*二. 判断题（共9 题，9.0分）*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%8D%95%E9%80%89%E9%A2%98%EF%BC%88%E5%85%B17-%E9%A2%98%EF%BC%8C14-0%E5%88%86%EF%BC%89"><span class="toc-number">15.</span> <span class="toc-text">*三. 单选题（共7 题，14.0分）*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E7%AE%80%E7%AD%94%E9%A2%98%EF%BC%88%E5%85%B12-%E9%A2%98%EF%BC%8C10-0%E5%88%86%EF%BC%89"><span class="toc-number">16.</span> <span class="toc-text">*四. 简答题（共2 题，10.0分）*</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E7%BC%96%E7%A8%8B%E9%A2%98%EF%BC%88%E5%85%B11-%E9%A2%98%EF%BC%8C15-0%E5%88%86%EF%BC%89"><span class="toc-number">17.</span> <span class="toc-text">*五. 编程题（共1 题，15.0分）*</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/062811438.html" title="Vue-章节复习"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue-章节复习"/></a><div class="content"><a class="title" href="/2023/062811438.html" title="Vue-章节复习">Vue-章节复习</a><time datetime="2023-06-28T11:51:22.000Z" title="发表于 2023-06-28 19:51:22">2023-06-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/062859493.html" title="Vue-总复习"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue-总复习"/></a><div class="content"><a class="title" href="/2023/062859493.html" title="Vue-总复习">Vue-总复习</a><time datetime="2023-06-28T06:00:48.000Z" title="发表于 2023-06-28 14:00:48">2023-06-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/062337710.html" title="软件架构"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件架构"/></a><div class="content"><a class="title" href="/2023/062337710.html" title="软件架构">软件架构</a><time datetime="2023-06-23T07:07:35.000Z" title="发表于 2023-06-23 15:07:35">2023-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/062152748.html" title="软件测试-简答"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件测试-简答"/></a><div class="content"><a class="title" href="/2023/062152748.html" title="软件测试-简答">软件测试-简答</a><time datetime="2023-06-21T03:54:43.000Z" title="发表于 2023-06-21 11:54:43">2023-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/061958515.html" title="android简答题-个人总结版（6-19）"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="android简答题-个人总结版（6-19）"/></a><div class="content"><a class="title" href="/2023/061958515.html" title="android简答题-个人总结版（6-19）">android简答题-个人总结版（6-19）</a><time datetime="2023-06-19T15:39:08.000Z" title="发表于 2023-06-19 23:39:08">2023-06-19</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">公益广告</p><div class="bg-ad"><div>&nbsp 联合国儿童基金会在190多个国家和地区开展工作，以拯救儿童的生命，捍卫他们的权利，帮助他们实现自己的潜能。为维护每一名儿童的权利，联合国儿童基金会永不止步。了解联合国儿童基金会为每一名儿童所开展的工作，无论何时何地。</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://www.unicef.org/zh">点击跳转到哪儿</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">修仙导航</p><ul class="ft-links"><li><a target="_blank" rel="noopener" href="https://tzy1997.com/articles/hexo1600/">建站指南</a><a target="_blank" rel="noopener" href="https://tzy1997.com/nav.html">网址导航</a></li><li><a target="_blank" rel="noopener" href="https://tzy1997.com/sponsorWall/">来杯咖啡</a><a target="_blank" rel="noopener" href="https://tzy1997.com/comments/">留点什么</a></li><li><a target="_blank" rel="noopener" href="https://tzy1997.com/about/">关于博主</a><a target="_blank" rel="noopener" href="https://tzy1997.com/archives/">文章归档</a></li><li><a target="_blank" rel="noopener" href="https://tzy1997.com/categories/">文章分类</a><a target="_blank" rel="noopener" href="https://tzy1997.com/tags/">文章标签</a></li><li><a target="_blank" rel="noopener" href="https://tzy1997.com/gallery/">我的相册</a><a target="_blank" rel="noopener" href="https://tzy1997.com/bangumis/">我的追番</a></li><li><a target="_blank" rel="noopener" href="https://tzy1997.com/specialEffects/">一些特效</a><a target="_blank" rel="noopener" href="https://tzy1997.com/wallpaper/">一些壁纸</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://baiyeblog.top/"><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/微信图片_20221020121228.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://zhangshier.vip/"><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/张时贰.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://tzy1997.com/"><img src="https://bu.dusays.com/2022/05/02/626f92e193879.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://akilar.top/"><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/Akilar.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://blog.zhheo.com/"><img src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/Heo.jpg" alt=""/></a></div></div></div></div><div class="copyright">&copy;2022 - 2023  <i id="heartbeat" class="fa fas fa-heartbeat"></i> LHT</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random/index.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div id="myscoll"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://example.baiyeblog.top/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://example.baiyeblog.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://example.baiyeblog.top/',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><canvas id="universe"></canvas><script src="/js/universe.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script data-pjax defer src="https://npm.elemecdn.com/tzy-blog/lib/js/theme/chocolate.js"></script><script async src="/js/diytitle.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script id="canvas_nest" defer="defer" color="0,162,168" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "89653393-86a4-44e4-98fb-248b4915bc43";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (false) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '112.982279,28.19409';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2023/030430581.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/spring.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-03-04</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2023/030430581.html&quot;);" href="javascript:void(0);" alt="">Spring基础学习笔记</a><div class="blog-slider__text">这是一个关于Spring基础的学习（根据B站“黑马程序员新版Spring零基础入门到精通，一套搞定spring全套视频教程”此视频学习。）</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2023/030430581.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/11147264.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/JavaWeb.jpeg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/11147264.html&quot;);" href="javascript:void(0);" alt="">Java-Web基础之JDBC</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/11147264.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/100231537.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/JavaWeb.jpeg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-02</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/100231537.html&quot;);" href="javascript:void(0);" alt="">Java Web基础之MYSQL（二）</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/100231537.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/100141253.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://baiye-1303837911.cos.ap-chengdu.myqcloud.com/JavaWeb.jpeg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/100141253.html&quot;);" href="javascript:void(0);" alt="">Java Web基础之MYSQL（一）</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/100141253.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitcalendar.baiyeblog.top/api?LHT-Stan",['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'],'LHT-Stan')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
