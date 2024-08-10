@@ -1,0 +1,99 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	/* background: #487EB0; */
+}
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+}
+.signup-form{
+	width: 350px;
+	padding: 20px;
+	text-align: center;
+	/* background: url(); */
+	
+}
+.signup-form h1{
+	margin-top: 6.25rem;
+	font-family: 'Permanent Marker', cursive;
+	color: #fff;
+	font-size: 40px;
+}
+
+.signup-form input{
+	/* display: block; */
+	padding: 0 auto;
+	text-align: center;
+	width: 300px;
+	height: 30px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+}
+.gender input{
+	width: 20px;
+}
+.sex{
+	text-align: left;
+	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
+	margin: 10px 3px 5px 5px;
+}
+.txtb{
+	margin: 10px 0;
+	width: 9.375rem;
+	height: 25px;
+	background: rgb(255,255,255,.5);
+	border-radius: 6px;
+}
+
+.prov{
+	width: 150px;
+	height: 25px;
+	background: rgb(255,255,255,.5);
+	border-radius: 6px;
+}
+.select input{
+	text-align: left;
+	display: inline;
+	width: 150px;
+	height: 25px;
+}
+.age{
+	margin: 10px 0;
+	width: 150px;
+	height: 25px;
+	background: rgb(255,255,255,.5);
+	border-radius: 6px;
+}
+.signup-btn{
+	margin-top: 3.75rem;
+	margin-top: 20px;
+	background: #487eb0;
+	color: #fff;
+	/* font-family: 'Permanent Marker', cursive; */
+	font-size: 14px;
+	border-radius: 2.75rem;
+	cursor: pointer;
+	transition: 0.8s;
+	
+}
+
+.test{
+	display: inline;
+}
+.checkbox input{
+	width: 50px;
+}
+.checkbox label{
+	font-family: 'Permanent Marker', cursive; 
+}
+.sub input{
+	width: 100px;
+}
